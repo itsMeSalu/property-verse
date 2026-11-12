@@ -1,0 +1,588 @@
+{
+  "hero": "/images/home/hero.webp",
+  "cityBackground": "/images/home/city-background.png",
+  "cities": [
+    {
+      "name": "Bangalore",
+      "color": "#ffd09a",
+      "image": "/images/home/city-bangalore.png"
+    },
+    {
+      "name": "Pune",
+      "color": "#f0ecff",
+      "image": "/images/home/city-pune.png"
+    },
+    {
+      "name": "Chennai",
+      "color": "#b3e6e5",
+      "image": "/images/home/city-chennai.png"
+    },
+    {
+      "name": "Hyderabad",
+      "color": "#dce3c2",
+      "image": "/images/home/city-hyderabad.png"
+    },
+    {
+      "name": "Dubai",
+      "color": "#ffe8ef",
+      "image": "/images/home/city-dubai.png"
+    }
+  ],
+  "builders": [
+    {
+      "image": "/images/home/builder-0.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-1.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-2.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-3.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-4.jpeg",
+      "name": "Emaar"
+    },
+    {
+      "image": "/images/home/builder-5.png",
+      "name": "Navin"
+    },
+    {
+      "image": "/images/home/builder-6.webp",
+      "name": "Sree Guru Foundation"
+    },
+    {
+      "image": "/images/home/builder-7.png",
+      "name": "Malles"
+    },
+    {
+      "image": "/images/home/builder-8.webp",
+      "name": "Urbanrise"
+    },
+    {
+      "image": "/images/home/builder-9.webp",
+      "name": "Vijay Raja Group"
+    },
+    {
+      "image": "/images/home/builder-10.png",
+      "name": "Ruby Builders"
+    },
+    {
+      "image": "/images/home/builder-11.png",
+      "name": "GP Homes"
+    },
+    {
+      "image": "/images/home/builder-12.png",
+      "name": "Newry Properties"
+    },
+    {
+      "image": "/images/home/builder-13.png",
+      "name": "Doshi Housing"
+    },
+    {
+      "image": "/images/home/builder-14.png",
+      "name": "DAC Developers"
+    },
+    {
+      "image": "/images/home/builder-15.webp",
+      "name": "DRA Homes"
+    },
+    {
+      "image": "/images/home/builder-16.webp",
+      "name": "KG Developers"
+    },
+    {
+      "image": "/images/home/builder-17.png",
+      "name": "Urban Tree"
+    },
+    {
+      "image": "/images/home/builder-18.png",
+      "name": "Shriram Properties"
+    },
+    {
+      "image": "/images/home/builder-19.png",
+      "name": "Jain Housing"
+    },
+    {
+      "image": "/images/home/builder-20.png",
+      "name": "Appaswamy Real Estate"
+    },
+    {
+      "image": "/images/home/builder-21.webp",
+      "name": "Mahindra Lifespaces"
+    },
+    {
+      "image": "/images/home/builder-22.webp",
+      "name": "My Home Constructions"
+    },
+    {
+      "image": "/images/home/builder-23.png",
+      "name": "SMR Holdings"
+    },
+    {
+      "image": "/images/home/builder-24.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-25.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-26.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-27.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-28.png",
+      "name": "APARNA CYBERHEIGHTS"
+    },
+    {
+      "image": "/images/home/builder-29.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-30.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-31.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-32.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-33.jpeg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-34.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-35.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-36.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-37.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-38.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-39.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-40.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-41.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-42.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-43.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-44.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-45.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-46.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-47.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-48.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-49.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-50.webp",
+      "name": "L & T Realty"
+    },
+    {
+      "image": "/images/home/builder-51.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-52.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-53.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-54.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-55.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-56.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-57.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-58.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-59.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-60.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-61.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-62.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-63.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-64.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-65.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-66.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-67.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-68.jpeg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-69.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-70.jpeg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-71.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-72.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-73.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-74.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-75.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-76.png",
+      "name": "Kasturi housing"
+    },
+    {
+      "image": "/images/home/builder-77.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-78.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-79.webp",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-80.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-81.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-82.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-83.jpg",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-84.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-85.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-86.png",
+      "name": ""
+    },
+    {
+      "image": "/images/home/builder-87.png",
+      "name": ""
+    }
+  ],
+  "banners": [
+    "/images/home/banner-0.png",
+    "/images/home/banner-1.png",
+    "/images/home/banner-2.png",
+    "/images/home/banner-3.png",
+    "/images/home/banner-4.png"
+  ],
+  "featuredImages": [
+    "/images/home/southern-star.png",
+    "/images/home/suncrest.png"
+  ],
+  "process": [
+    "/images/home/process-0.png",
+    "/images/home/process-1.png",
+    "/images/home/process-2.png",
+    "/images/home/process-3.png",
+    "/images/home/process-4.png"
+  ],
+  "blogs": [
+    {
+      "name": "Godrej Woodscapes",
+      "date": "Mar 21, 2025",
+      "title": "Godrej Woodscapes Project Review | Review #46",
+      "excerpt": "Godrej Woodscapes Project Review | Review #46 Imagine living in",
+      "image": "/images/home/blog-0.png",
+      "url": "https://proptimes.org/godrej-woodscapes/"
+    },
+    {
+      "name": "Brigade Misty Green",
+      "date": "Mar 19, 2025",
+      "title": "Brigade Misty Green Project Review | Review #45",
+      "excerpt": "Brigade Misty Green Project Review | Review #45 Nestled in",
+      "image": "/images/home/blog-1.png",
+      "url": "https://proptimes.org/brigade-misty-green/"
+    },
+    {
+      "name": "Prestige Suncrest",
+      "date": "Mar 14, 2025",
+      "title": "Prestige Suncrest Project Review | Review #44",
+      "excerpt": "Prestige Suncrest Project Review | Review #44 Welcome to Prestige",
+      "image": "/images/home/blog-2.png",
+      "url": "https://proptimes.org/prestige-suncrest/"
+    },
+    {
+      "name": "Sobha Ayana",
+      "date": "Mar 07, 2025",
+      "title": "Sobha Ayana Project Review | Review #43",
+      "excerpt": "Sobha Ayana Project Review | Review #43 Welcome to the",
+      "image": "/images/home/blog-3.png",
+      "url": "https://proptimes.org/sobha-ayana/"
+    }
+  ],
+  "awards": [
+    {
+      "image": "/images/home/award-1.png",
+      "title": "Bronze Certificate",
+      "description": "#500 Blockbuster launch"
+    },
+    {
+      "image": "/images/home/award-2.jpg",
+      "title": "Prime Partner - Sapphi",
+      "description": "FY’24"
+    },
+    {
+      "image": "/images/home/award-3.jpg",
+      "title": "Assets",
+      "description": "Channel Partner"
+    },
+    {
+      "image": "/images/home/award-4.png",
+      "title": "Brigade Certificate",
+      "description": "35 Years of Brigade"
+    },
+    {
+      "image": "/images/home/award-5.png",
+      "title": "Brigade Certificate",
+      "description": "Spectacular Achievement in FY 2020-21"
+    },
+    {
+      "image": "/images/home/award-6.jpg",
+      "title": "Assetz",
+      "description": "Preferred Channel Partner"
+    },
+    {
+      "image": "/images/home/award-7.png",
+      "title": "Brigade Certificate",
+      "description": "Outstanding Achievement in 03 of fy 2021-22"
+    },
+    {
+      "image": "/images/home/award-8.jpg",
+      "title": "Provident Certificate",
+      "description": "For the success of Provident Ecopolitant"
+    },
+    {
+      "image": "/images/home/award-9.png",
+      "title": "Brigade Certificate",
+      "description": "The Extra Miler Award FY 21-22"
+    },
+    {
+      "image": "/images/home/award-10.jpg",
+      "title": "Brigade Certificate",
+      "description": "The Extra Miler Award FY 22-23"
+    },
+    {
+      "image": "/images/home/award-11.png",
+      "title": "Brigade Certificate",
+      "description": "35 Years of Brigade"
+    },
+    {
+      "image": "/images/home/award-12.png",
+      "title": "Brigade Certificate",
+      "description": "Outstanding Achievement in 03 of fy 2020-21"
+    },
+    {
+      "image": "/images/home/award-13.png",
+      "title": "Prestige Group",
+      "description": "Champion Sales Partner"
+    },
+    {
+      "image": "/images/home/award-14.png",
+      "title": "Mahindra Lifespaces",
+      "description": "certificate of appreciations"
+    },
+    {
+      "image": "/images/home/award-15.png",
+      "title": "Lifespaces",
+      "description": "Mahindra Lifespace Appreciation Trophy"
+    },
+    {
+      "image": "/images/home/award-16.png",
+      "title": "Lodha",
+      "description": "Certificate of Recognition"
+    },
+    {
+      "image": "/images/home/award-17.png",
+      "title": "#1750 CR",
+      "description": "Recognising excellence at Hyderabad's consecutive Record Breaking Super Launch"
+    },
+    {
+      "image": "/images/home/award-18.png",
+      "title": "Brigade Altius",
+      "description": "Certificate of Appreciation"
+    },
+    {
+      "image": "/images/home/award-19.png",
+      "title": "NCC Urban",
+      "description": "Valuable Contribution Award"
+    },
+    {
+      "image": "/images/home/award-20.png",
+      "title": "Brigade Group",
+      "description": "Brigade Cornerstone Utopia Recognition certificate"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Sundeep Kailwoo",
+      "text": "Trust Proptimes to help with your real estate needs",
+      "image": "/images/home/avatar-0.jpg"
+    },
+    {
+      "name": "shankar mangal",
+      "text": "I have had a good experience working with prop time real estate consultant specially with Pranay Puram..I believe they are having best consultant in the market who recommends best property and be with you till the last. Because of Pranay's guidance I was able to book the property in Balewadi.. earlier I was looking in wakad and he wanted me to look for an better options.",
+      "image": "/images/home/avatar-1.jpg"
+    },
+    {
+      "name": "khizer behelvi",
+      "text": "Rishov reached out to me regarding a property, and at first, I assumed it was just another routine sales pitch. However, I was pleasantly surprised by his thoughtful, consultative approach. He took the time to truly understand my needs and didn’t pressure me when I mentioned needing some time to think it over. What impressed me further was his initiative to bring his manager, Nikhil, into the conversation. Together, they discussed the plans in detail, tailoring their insights to align perfectly with what I was looking for. It was a refreshing and personalized experience.",
+      "image": "/images/home/avatar-2.jpg"
+    },
+    {
+      "name": "Anilal Ravi",
+      "text": "Justin and Nikhil from Prop times have done a good job at arranging site visits, connecting to the right people, sharing insights on relative comparison of properties and thereby helping customers in making informed decisions",
+      "image": "/images/home/avatar-3.jpg"
+    },
+    {
+      "name": "Kimmi Kalindi",
+      "text": "Prop Times knows their business very well , they have a professional team . Special thanks to Mr. Nikhil Kumar for his patience and got us the first shot at a property of our liking . He truly understands his clients requirements and he is very professional in his conduct.",
+      "image": "/images/home/avatar-4.jpg"
+    },
+    {
+      "name": "Thomas Punnackal",
+      "text": "With Rishav by side it was very helpful to identify the right property at a good price. Appreciate the sincere service.",
+      "image": "/images/home/avatar-5.jpg"
+    },
+    {
+      "name": "Abhishek Nebarsu",
+      "text": "Had a good experience with PropTimes. They are good with follow ups and make sure all our questions and concerns are addressed on timely fashion.",
+      "image": "/images/home/avatar-6.jpg"
+    },
+    {
+      "name": "Hirna Vadher",
+      "text": "I'm thoroughly enjoying my role, with a great balance of challenge and support. The team is collaborative, supportive and positive company culture make coming to work each day a pleasure.. 5/5 stars!",
+      "image": "/images/home/avatar-7.jpg"
+    },
+    {
+      "name": "S K",
+      "text": "I can't recommend Prop Times highly enough, especially my fantastic advisor, Rishov! From the very beginning, he was incredibly attentive and truly took the time to understand what I was looking for in a home. Rishov was always available to answer my questions and provide updates, which made the entire process so much smoother. He has a knack for connecting with the right people, and he expertly guided me through different listings until I finally found my dream property. If you're looking for a dedicated and knowledgeable property consultant who will go the extra mile, look no further than Rishov at Prop Times. He's a true professional who made my home-buying experience an absolute pleasure! Thank you once again.",
+      "image": "/images/home/avatar-8.jpg"
+    }
+  ],
+  "googleLogo": "/images/home/google-logo.svg",
+  "googleIcon": "/images/home/google-icon.svg"
+}
