@@ -8,6 +8,7 @@
 .property-detail-back{display:inline-block;color:#777;margin-bottom:20px;font-size:14px}
 .property-detail-page h1{margin:0 0 10px;font-size:30px}
 .property-detail-layout{display:grid;grid-template-columns:1fr;gap:30px;margin:25px 0}
+.property-detail-layout.has-overview{grid-template-columns:1.2fr 1fr}
 .property-detail-image{width:100%;min-height:300px;border:1px solid #e1e1e1;border-radius:11px;object-fit:cover}
 .property-detail-overview{border:1px solid #e1e1e1;border-radius:11px;padding:30px;font-size:15px;line-height:24px}
 .property-detail-overview .price{font-size:23px;margin:8px 0 15px}
@@ -102,3 +103,5 @@ header:has(+main .property-search-page){height:108px;border:0}.nav-wrap:has(+mai
 /* Give project visuals more presence and improve the guidance contrast. */
 .listing-photo{height:225px}.listing-contact{background:linear-gradient(120deg,#eaf1e3,#f5f2e8);color:#243d2d;border-top:1px solid #dce5d4}.listing-contact .listing-eyebrow{color:#53694a}.listing-contact h2{color:#243d2d}.listing-contact p{color:#4f6248;font-size:15px;line-height:1.75}.listing-contact button{background:#123e31;color:#fff;border:1px solid #123e31;box-shadow:0 5px 16px #123e3112}.listing-contact button:hover{background:#24523f;color:#fff}
 @media(max-width:767px){.listing-photo{height:225px}.listing-contact p{font-size:14px}}
+
+@media(max-width:767px){.property-detail-layout.has-overview{grid-template-columns:1fr}}
