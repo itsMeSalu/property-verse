@@ -896,11 +896,16 @@
   },
   "sobha-sobha-morzaria-grandeur": {
     "rera": {
-      "ids": [],
-      "status": "unconfirmed",
-      "sources": [],
+      "ids": [
+        "PRM/KA/RERA/1251/310/PR/170917/000412"
+      ],
+      "sources": [
+        "https://www.aurumproptech.in/pulse/rera/karnataka/bengaluru-urban/sobha-morzaria-grandeur-2-w1/503",
+        "https://housing.com/in/buy/projects/page/4567-sobha-morzaria-grandeur-by-sobha-limited-in-sg-palya"
+      ],
+      "status": "source-matched",
       "checkedOn": "2026-11-13",
-      "basis": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
+      "basis": "Registration is for Morzaria Grandeur 2 (W1) only; it does not establish registration for all phases of the wider development. Match the unit to this wing; current regulatory status is not independently verified."
     }
   },
   "sobha-sobha-ivory": {
@@ -1351,14 +1356,17 @@
   "assetz-bloom-dell": {
     "rera": {
       "ids": [
+        "PRM/KA/RERA/1251/446/PR/201222/005545",
         "PRM/KA/RERA/1251/446/PR/050523/005911"
       ],
       "status": "source-matched",
       "sources": [
-        "https://www.assetzproperty.com/bloomanddell/"
+        "https://www.assetzproperty.com/bloomanddell/",
+        "https://www.realestatechecker.in/builder/bengaluru/apg-premium-residential-private-limited",
+        "https://www.magicbricks.com/assetz-bloom-%26-dell-rera-details-nprid-4d4235333838393333"
       ],
       "checkedOn": "2026-11-13",
-      "basis": "Project-specific published registration; current regulatory status not independently verified."
+      "basis": "Original project phase ends 005545; phase 2 ends 005911. Match your tower to its phase. Current regulatory status is not independently verified."
     }
   },
   "assetz-codename-sublime": {

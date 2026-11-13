@@ -1,10 +1,10 @@
 # Property RERA and location research
 
-Publication rule: only the 79 projects with a supplied advertised or numeric price are visible on the website. The 109 unpriced projects remain in the original data and research records, but are excluded from all shared listing collections and property detail lookups. The research counts below describe the full source inventory.
+Publication rule: all 188 source projects are restored. The 109 formerly hidden records were researched and enriched through `src/data/property-enrichment.json`; supplied facts are retained unless an explicit, sourced correction is recorded. See `property-enrichment-report.json` for numeric-price coverage and unresolved fields. Numeric prices are not invented for records with no reliable public quotation. Corporate-office and historical commercial portfolio records are labeled and do not offer a sale enquiry.
 
 Checked 13 November 2026. The original 188-row inventory and supplied locality text are preserved. Research is applied by stable property ID from `src/data/property-research.json`, so rerunning the source importer does not erase enrichment.
 
-132 projects have published or originally supplied registration numbers. 56 remain unconfirmed. 52 have project-specific published map pins/embeds; 127 use explicitly labeled project-and-locality map searches, and nine have no supplied location and show an unavailable state. See `src/data/property-research-report.json` for all unresolved records.
+133 projects have published or originally supplied registration numbers. 55 remain unconfirmed. 52 have project-specific published map pins/embeds. The original inventory had nine missing locations; enrichment supplies sourced addresses/localities for those records. Remaining maps are explicitly labeled project-and-locality searches rather than confirmed project pins. See `src/data/property-research-report.json` for all unresolved records.
 
 Sources are linked on each property page. Published registration numbers do not establish current regulatory approval, exemption, availability, or a particular unit's registration. Some completed projects have no confirmed number; this is not treated as proof of exemption. Supplied numbers are retained with their provenance.
 
@@ -19,6 +19,8 @@ Sources are linked on each property page. Published registration numbers do not 
 - Amogaya Adorit's intermediary listing has an inconsistent registration; two matching project records supply the replacement.
 - Fresco at Purva Westend lists parent-project registrations with an explicit tower-allocation caveat. Carpe Diem lists the layout registration with a villa-construction scope caveat.
 - Published map embeds are retained directly, rather than converting map viewport centres into supposedly exact project coordinates. Generic locality searches are never labeled confirmed pins.
+
+- Morzaria Grandeur registration is scoped to phase 2 (W1), rather than applied to every phase. Bloom & Dell now lists both matched phase registrations.
 
 ## Completing unresolved records
 

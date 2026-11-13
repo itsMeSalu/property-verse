@@ -1,9 +1,9 @@
 {
   "checkedOn": "2026-11-13",
   "totalProperties": 188,
-  "propertiesWithRera": 132,
+  "propertiesWithRera": 133,
   "propertiesWithPublishedProjectMaps": 52,
-  "missingSuppliedLocation": [
+  "sourceInventoryMissingLocation": [
     {
       "id": "sobha-sobha-heritage",
       "name": "SOBHA HERITAGE"
@@ -41,6 +41,7 @@
       "name": "Assetz House"
     }
   ],
+  "missingSuppliedLocation": [],
   "unconfirmedRera": [
     {
       "id": "sobha-sobha-palladian",
@@ -213,49 +214,42 @@
     {
       "id": "sobha-sobha-heritage",
       "name": "SOBHA HERITAGE",
-      "location": null,
+      "location": "Near Veerabhadra Nagar Signal, Dsouza Nagar, Rajarajeshwari Nagar, RR Nagar, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "sobha-sobha-forest-view",
       "name": "SOBHA FOREST VIEW",
-      "location": null,
+      "location": "Off Kanakapura Road, Talaghattapura, South Bangalore, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "sobha-sobha-magnolia",
       "name": "SOBHA MAGNOLIA",
-      "location": null,
+      "location": "Bannerghatta Road, BTM Layout, South Bangalore, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "sobha-sobha-tulip",
       "name": "SOBHA TULIP",
-      "location": null,
+      "location": "24th Main Road, Ramaiah Garden, 6th Phase JP Nagar, South Bangalore, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "sobha-sobha-dewflower",
       "name": "SOBHA DEWFLOWER",
-      "location": null,
-      "status": "Completed",
-      "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
-    },
-    {
-      "id": "sobha-sobha-morzaria-grandeur",
-      "name": "SOBHA MORZARIA GRANDEUR",
-      "location": null,
+      "location": "4th Cross Road, Sarakki Nagar, JP Nagar Phase 1, South Bangalore, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "sobha-sobha-ivory",
       "name": "SOBHA IVORY",
-      "location": null,
+      "location": "Johns Road Hermit Colony Sivanchetti Gardens, Ulsoor, Central Bangalore, Bengaluru",
       "status": "Completed",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
@@ -298,14 +292,14 @@
       "id": "assetz-vrindavan-tech-village",
       "name": "Vrindavan Tech Village",
       "location": "Outer Ring Road",
-      "status": null,
+      "status": "Portfolio reference",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
       "id": "assetz-assetz-house",
       "name": "Assetz House",
-      "location": null,
-      "status": null,
+      "location": "Assetz House, 30 Crescent Road, Bengaluru 560001",
+      "status": "Corporate office reference",
       "reason": "No confidently matched project/phase registration found. This does not establish exemption or lack of registration."
     },
     {
@@ -448,7 +442,7 @@
     },
     {
       "id": "sobha-sobha-victoria-park-apartments",
-      "name": "SOBHA VICTORIA PARK \u2013 APARTMENTS",
+      "name": "SOBHA VICTORIA PARK – APARTMENTS",
       "location": "Off Hennur Main Road, Bengaluru"
     },
     {
@@ -478,7 +472,7 @@
     },
     {
       "id": "sobha-sobha-victoria-park-row-houses",
-      "name": "SOBHA VICTORIA PARK \u2013 ROW HOUSES",
+      "name": "SOBHA VICTORIA PARK – ROW HOUSES",
       "location": "Off Hennur Main Road, Bengaluru"
     },
     {
@@ -518,12 +512,12 @@
     },
     {
       "id": "sobha-sobha-manhattan-towers-townpark",
-      "name": "SOBHA MANHATTAN TOWERS \u2013 TOWNPARK",
+      "name": "SOBHA MANHATTAN TOWERS – TOWNPARK",
       "location": "Near Electronic City, Bengaluru"
     },
     {
       "id": "sobha-sobha-brooklyn-towers-townpark",
-      "name": "SOBHA BROOKLYN TOWERS \u2013 TOWNPARK",
+      "name": "SOBHA BROOKLYN TOWERS – TOWNPARK",
       "location": "Near Electronic City, Bengaluru"
     },
     {
@@ -675,6 +669,46 @@
       "id": "sobha-sobha-malachite-phase",
       "name": "SOBHA MALACHITE PHASE",
       "location": "Bellary Road"
+    },
+    {
+      "id": "sobha-sobha-heritage",
+      "name": "SOBHA HERITAGE",
+      "location": "Near Veerabhadra Nagar Signal, Dsouza Nagar, Rajarajeshwari Nagar, RR Nagar, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-forest-view",
+      "name": "SOBHA FOREST VIEW",
+      "location": "Off Kanakapura Road, Talaghattapura, South Bangalore, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-magnolia",
+      "name": "SOBHA MAGNOLIA",
+      "location": "Bannerghatta Road, BTM Layout, South Bangalore, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-tulip",
+      "name": "SOBHA TULIP",
+      "location": "24th Main Road, Ramaiah Garden, 6th Phase JP Nagar, South Bangalore, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-dewflower",
+      "name": "SOBHA DEWFLOWER",
+      "location": "4th Cross Road, Sarakki Nagar, JP Nagar Phase 1, South Bangalore, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-forest-edge",
+      "name": "SOBHA FOREST EDGE",
+      "location": "Off Kanakapura Road, Talaghattapura, Kanakapura Road, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-morzaria-grandeur",
+      "name": "SOBHA MORZARIA GRANDEUR",
+      "location": "Bhavani Nagar, S.G. Palya, Dairy Circle, Koramangala, Bannerghatta Road-BTM Layout, Bengaluru"
+    },
+    {
+      "id": "sobha-sobha-ivory",
+      "name": "SOBHA IVORY",
+      "location": "Johns Road Hermit Colony Sivanchetti Gardens, Ulsoor, Central Bangalore, Bengaluru"
     },
     {
       "id": "assetz-city-of-palms",
@@ -840,6 +874,11 @@
       "id": "assetz-vrindavan-tech-village",
       "name": "Vrindavan Tech Village",
       "location": "Outer Ring Road"
+    },
+    {
+      "id": "assetz-assetz-house",
+      "name": "Assetz House",
+      "location": "Assetz House, 30 Crescent Road, Bengaluru 560001"
     },
     {
       "id": "puravankara-purva-heritage",

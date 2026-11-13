@@ -2,12 +2,18 @@ import sourceProjects from './data/properties.json';
 import projectImages from './data/project-images.json';
 import regionMapping from './data/property-regions.json';
 import projectResearch from './data/property-research.json';
+import projectEnrichment from './data/property-enrichment.json';
 
-// Publish only listings with a supplied price; retain the complete source inventory.
-export const hasListedPrice=p=>Boolean(p.advertisedPrice?.trim())||Number.isFinite(p.priceFromLakh);
-const projects=sourceProjects.filter(hasListedPrice).map(source=>{
- const research=projectResearch[source.id],image=projectImages[source.id];
- return {...source,...(image?{image:image.src,imageSource:image}:{}),...(research?.rera?.ids?.length?{reraIds:research.rera.ids}:{}),reraResearch:research?.rera||null,mapLocation:research?.location||null};
+// Restore the full inventory. Enrichment fills gaps without erasing supplied facts.
+export const hasListedPrice=p=>Number.isFinite(p.priceFromLakh)||Boolean(p.advertisedPrice?.trim()&&!/on request|not provided|call|contact|TBA/i.test(p.advertisedPrice));
+const projects=sourceProjects.map(source=>{
+ const enrichment=projectEnrichment[source.id],research=projectResearch[source.id],image=projectImages[source.id];
+ const merged={...source};
+ for(const [key,value] of Object.entries(enrichment?.fields||{})){
+  const missing=merged[key]===null||merged[key]===undefined||merged[key]==='';
+  if(missing||enrichment?.correctedSuppliedFields?.[key])merged[key]=value;
+ }
+ return {...merged,...(image?{image:image.src,imageSource:image}:{}),...(research?.rera?.ids?.length?{reraIds:research.rera.ids}:{}),reraResearch:research?.rera||null,mapLocation:research?.location||null,enrichment:enrichment||null,priceContext:enrichment?.priceContext||null};
 });
 export {projects};
 export const PAGE_SIZE=6;
@@ -16,9 +22,9 @@ export const projectPath=p=>`/properties/${p.id}/`;
 export const normalize=value=>(value||'').toLowerCase().replace(/bengaluru/g,'bangalore').replace(/[^a-z0-9.]+/g,' ').trim();
 export const isClosed=p=>/sold\s*out|completed/i.test(p.status||'');
 export const isLegacy=p=>/legacy|historical/i.test(p.notes||'');
-export const canEnquire=p=>!isClosed(p)&&!isLegacy(p);
-export function priceLabel(p){return p.advertisedPrice??(p.priceFromLakh===null?'Not provided':`₹${p.priceFromLakh} lakh`)}
-export function priceHeading(p){return isClosed(p)||isLegacy(p)?'Advertised price (historical)': 'Starting price as listed'}
+export const canEnquire=p=>p.listingKind!=='portfolio'&&!isClosed(p)&&!isLegacy(p);
+export function priceLabel(p){return p.listingKind==='portfolio'?'Portfolio reference':p.advertisedPrice??(Number.isFinite(p.priceFromLakh)?`₹${p.priceFromLakh} lakh`:'Price on request')}
+export function priceHeading(p){if(p.listingKind==='portfolio')return 'Project information';if(!hasListedPrice(p))return 'Speak to our property team';if(p.priceContext)return p.priceContext.label;return isClosed(p)||isLegacy(p)?'Advertised price (historical)':'Starting price as listed'}
 export function bedroomOptions(p){
  if(!p.configuration)return [];
  const text=p.configuration.replace(/Type\s*\d+/gi,'');
@@ -61,6 +67,7 @@ export const propertyRegions=['North Bangalore','South Bangalore','East Bangalor
 const localityKey=value=>normalize(value).replace(/\./g,' ').replace(/\s+/g,' ').trim();
 const localityRegions=new Map(Object.entries(regionMapping.locations).flatMap(([region,locations])=>locations.map(location=>[localityKey(location),region])));
 export function propertyRegion(p){
+ if(p.enrichment?.region)return p.enrichment.region;
  if(/require confirmation/i.test(p.notes||''))return 'Uncategorized';
  return localityRegions.get(localityKey(p.location))||'Uncategorized';
 }
@@ -106,7 +113,7 @@ const priceText=value=>value>=100?'₹'+Number((value/100).toFixed(2))+' Cr':'�
 export const priceRangeOptions=[];
 const priceGroupSize=Math.ceil(listedPrices.length/5);
 for(let i=0;i<listedPrices.length;i+=priceGroupSize){const min=listedPrices[i],max=listedPrices[Math.min(i+priceGroupSize-1,listedPrices.length-1)];priceRangeOptions.push({text:min===max?priceText(min):priceText(min)+' – '+priceText(max),value:min+':'+max});}
-if(projects.some(p=>p.priceFromLakh===null))priceRangeOptions.push({text:'Not provided',value:'missing'});
+if(projects.some(p=>p.priceFromLakh===null))priceRangeOptions.push({text:'Price on request',value:'missing'});
 
 // Keep supplied locality text intact; never treat a locality search as an exact pin.
 export function propertyMap(p){

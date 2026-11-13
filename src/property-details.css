@@ -76,3 +76,4 @@
 .home-header:has(+main .detail-page) .nav-contact:hover{background:#20533e;color:#fff}
 @media(min-width:768px){.home-header:has(+main .detail-page){height:100px;border-bottom:1px solid #eef0e9}.home-header:has(+main .detail-page) .nav-wrap{width:90%;max-width:1290px}.home-header:has(+main .detail-page) nav{font-size:15px;gap:28px}.home-header:has(+main .detail-page) .logo{width:165px}}
 @media(max-width:767px){.detail-page .detail-section-nav{width:100%}.detail-page .detail-breadcrumb{padding:0}}
+.detail-price-evidence{font-size:11px;color:#707b65;margin-top:14px;line-height:1.8}.detail-price-evidence summary{cursor:pointer;text-decoration:underline;text-underline-offset:4px}.detail-price-evidence p{margin:10px 0}.detail-price-evidence a{display:block;color:#123e31;text-decoration:underline;text-underline-offset:3px}.detail-price-evidence>span{display:block;margin-top:8px;font-size:10px}.detail-area-note{font-size:11px;line-height:1.8;color:#78816f;margin:18px 0}
