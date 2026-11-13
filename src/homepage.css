@@ -50,12 +50,4 @@ header:has(+main .estate-home){height:108px;border:0}.home-header:has(+main .est
 
 /* A transparent emblem and crisp light wordmark sit directly on the footer. */
 .estate-footer .estate-footer-grid .estate-footer-brand{display:flex;align-items:center;gap:17px;width:max-content;max-width:100%;margin:0 0 24px;padding:0;background:transparent;text-decoration:none}
-.estate-footer-emblem{position:relative;display:block;overflow:hidden;flex:0 0 76px;width:76px;height:102px}
-.estate-footer .estate-footer-grid .estate-footer-emblem>img{position:absolute;width:340px;max-width:none;height:auto;left:-25px;top:-7px;padding:0;border:0;border-radius:0;background:transparent}
-.estate-footer-wordmark{position:relative;display:block;border-left:1px solid #365540;padding-left:17px;color:#f8faf6}
-.estate-footer-wordmark strong{display:block;font:800 25px/1.1 Arial,Helvetica,sans-serif;letter-spacing:-1px;white-space:nowrap}
-.estate-footer-wordmark>span{display:block;margin-top:9px;font:500 11px/1.2 Arial,Helvetica,sans-serif;letter-spacing:7px;color:#bccdb3;text-align:center}
-.estate-footer-leaf{position:absolute;left:60%;top:-12px;width:34px;height:16px}
-.estate-footer .estate-footer-grid>div:first-child>p{margin-top:18px;line-height:1.8}
-@media(max-width:767px){.estate-footer .estate-footer-grid .estate-footer-brand{gap:14px;margin-bottom:18px}.estate-footer-wordmark{padding-left:14px}.estate-footer-wordmark strong{font-size:24px}}
-@media(max-width:360px){.estate-footer-wordmark strong{font-size:21px}.estate-footer-wordmark>span{font-size:10px;letter-spacing:6px}}
+.estate-footer .estate-footer-grid .estate-footer-new-logo{display:block;width:165px;height:auto;aspect-ratio:260/174;max-width:100%;padding:0;background:transparent;object-fit:contain}
