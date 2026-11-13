@@ -1,6 +1,7 @@
 import React, {useEffect,useRef,useState} from 'react';
 import {projects,PAGE_SIZE,provided,projectPath,normalize,isClosed,isLegacy,canEnquire,priceLabel,priceHeading,readFilters,filterProjects,propertyRegions,propertyRegion,propertyIllustration,propertyTypeOptions,bhkOptions,builderOptions,priceRangeOptions,statusOptions} from './propertyData.js';
 import './properties.css';
+import './property-details.css';
 import {PropertyRera,PropertyLocation} from './PropertyLocation.jsx';
 
 const categories=['Apartments','Villas','Plots','Ready to Move','2 BHK','2.5 BHK','3 BHK','4 BHK','Pre Launch'];
@@ -12,7 +13,7 @@ function PropertyImage({property,className=''}){
   image.src=flatIllustrations[index];
   image.alt='Illustrative apartment community, not an image of this project';
  }
- return <div className={`property-visual ${className}`}><img src={image.src} alt={image.alt} loading="lazy"/><span className="property-illustration-label">{image.illustrative?'Illustrative image':'Builder project visual'}</span></div>;
+ return <div className={`property-visual ${className}`}><img src={image.src} alt={image.alt} loading={className.includes('property-detail-image')?'eager':'lazy'} fetchPriority={className.includes('property-detail-image')?'high':undefined}/><span className="property-illustration-label">{image.illustrative?'Illustrative image':'Builder project visual'}</span></div>;
 }
 function PropertyCard({property:p,onContact}){return <article className="listing-card">
  <a className="listing-photo" href={projectPath(p)} aria-label={`View ${p.name}`}><PropertyImage property={p}/><span className="listing-status">{provided(p.status)}</span></a>
@@ -52,10 +53,22 @@ export function PropertiesSearch({SearchSelect:Select,Pagination,onContact}){
 export function PropertyDetails({slug,onContact}){
  const p=projects.find(p=>p.id===slug);
  useEffect(()=>{document.title=p?`${p.name} | SMART YIELD PROPERTY`:'Property not found | SMART YIELD PROPERTY'},[p]);
- if(!p)return <section className="property-detail-page"><h1>Property not found</h1><a className="orange" href="/properties-search/">Back to properties</a></section>;
- const hasPrice=Boolean(p.advertisedPrice?.trim())||Number.isFinite(p.priceFromLakh);
- const hasStatus=Boolean(p.status?.trim());
- const showOverview=hasPrice||hasStatus;
- const fields=[['Builder',p.builder],['Source brand',p.sourceBrand],['Location',p.location],['Region',propertyRegion(p)],['Property type',p.propertyType],['Phase',p.phase],['BHK configuration',p.configuration],['Size as listed',p.sizeSqFt],['Starting price as listed',p.advertisedPrice],['Price from (₹ lakh)',p.priceFromLakh],['Status / availability',p.status],['Possession date as listed',p.possessionDate],['Site area',p.siteArea],['Total units',p.totalUnits]];
- return <section className="property-detail-page"><a className="property-detail-back" href="/properties-search/">← Back to properties</a><h1>{p.name}</h1><p className="description">{p.location}</p><div className={`property-detail-layout ${showOverview?'has-overview':''}`}><PropertyImage property={p} className="property-detail-image"/>{showOverview&&<div className="property-detail-overview">{hasPrice&&<><div className="starting">{priceHeading(p)}</div><div className="price">{priceLabel(p)}</div></>}{hasStatus&&<p className="property-detail-status">{p.status}</p>}{isClosed(p)&&<p>This project is {p.status.toLowerCase()}. It is not listed as available for sale.</p>}{isLegacy(p)&&<p>Historical listing. Current availability is not confirmed.</p>}{canEnquire(p)&&<button className="orange" onClick={onContact}>Contact us</button>}</div>}</div><dl className="property-detail-fields">{fields.filter(([,value])=>value!==null&&value!==undefined&&String(value).trim()).map(([name,value])=><div key={name}><dt>{name}</dt><dd>{provided(value)}</dd></div>)}</dl><section className="property-rera-section" id="rera"><h2>RERA registration</h2><PropertyRera property={p}/></section><PropertyLocation property={p}/>{p.notes&&<p className="property-detail-notes">{p.notes}</p>}{p.reraAsListed&&!p.reraIds.length&&<p>{p.reraAsListed}</p>}</section>;
+ if(!p)return <section className="property-detail-page detail-not-found"><span className="detail-eyebrow">SMART YIELD PROPERTY</span><h1>Property not found</h1><p>Explore the projects currently available in our collection.</p><a className="detail-button" href="/properties-search/">Explore properties ↗</a></section>;
+ const present=value=>value!==null&&value!==undefined&&String(value).trim();
+ const facts=[['Property type',p.propertyType],['Configuration',p.configuration],['Size',p.sizeSqFt],['Possession',p.possessionDate]].filter(([,value])=>present(value));
+ const fields=[['Builder',p.builder],['Location',p.location],['Bangalore region',propertyRegion(p)],['Property type',p.propertyType],['Phase',p.phase],['Configuration',p.configuration],['Size',p.sizeSqFt],['Project status',p.status],['Possession',p.possessionDate],['Site area',p.siteArea],['Total units',p.totalUnits]].filter(([,value])=>present(value));
+ const related=projects.filter(other=>other.id!==p.id&&other.configuration&&other.sizeSqFt&&other.propertyType&&other.builder&&other.location&&other.status&&propertyRegion(other)===propertyRegion(p)).slice(0,3);
+ return <article className="property-detail-page detail-page">
+ <nav className="detail-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/properties-search/">Properties</a><span aria-hidden="true">/</span><span aria-current="page">{p.name}</span></nav>
+ <header className="detail-title"><div><span className="detail-eyebrow">A PLACE TO CALL YOUR OWN</span><h1>{p.name}</h1>{p.location&&<p className="detail-address"><span aria-hidden="true">⌖</span>{p.location}</p>}</div>{p.builder&&<div className="detail-developer"><span>DEVELOPED BY</span><strong>{p.builder}</strong></div>}</header>
+ <div className="detail-content-grid"><div className="detail-main">
+ <div className="detail-hero-image"><PropertyImage property={p} className="property-detail-image"/>{p.status&&<span className="detail-status">{p.status}</span>}</div>
+ {facts.length>0&&<dl className="detail-quick-facts">{facts.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>}
+ <nav className="detail-section-nav" aria-label="Property sections"><a href="#overview">Overview</a><a href="#rera">RERA details</a><a href="#location">Location</a></nav>
+ <section className="detail-overview-section" id="overview"><span className="detail-eyebrow">THE PROJECT AT A GLANCE</span><h2>Space for your next chapter.</h2><p className="detail-intro">Explore {p.name}{p.builder?` by ${p.builder}`:''}{p.location?` in ${p.location}`:''}. Review the project details and location to find a place that fits your plans.</p><dl className="detail-field-grid">{fields.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>{p.notes&&<p className="detail-project-note">{p.notes}</p>}</section>
+ <section className="detail-registration" id="rera"><span className="detail-eyebrow">PROJECT REGISTRATION</span><h2>RERA details</h2><PropertyRera property={p}/></section>
+ <div className="detail-map"><span className="detail-eyebrow">EXPLORE THE NEIGHBOURHOOD</span><PropertyLocation property={p}/></div>
+ </div><aside className="detail-sidebar" aria-label="Price and property enquiry"><div className="detail-enquiry-card"><span className="detail-eyebrow">YOUR NEXT MOVE STARTS HERE</span><p className="detail-price-label">{priceHeading(p)}</p><strong className="detail-price">{priceLabel(p)}</strong><p className="detail-price-note">Contact our team for current pricing and availability.</p><div className="detail-enquiry-divider"/>{canEnquire(p)?<><h2>See yourself here?</h2><p>Let’s talk about this property and help you plan your next step.</p><button type="button" className="detail-button" onClick={onContact}>Enquire about this property <span aria-hidden="true">↗</span></button></>:<><h2>{isClosed(p)?'Completed or sold out':'Historical listing'}</h2><p>{isClosed(p)?'Explore other projects in our collection for your next home.':'Contact our team to confirm current availability.'}</p><a href="/properties-search/" className="detail-button">Explore properties <span aria-hidden="true">↗</span></a></>}<a className="detail-call" href="tel:+916360141698">Call +91 63601 41698 <span aria-hidden="true">↗</span></a><div className="detail-advisor"><span className="detail-advisor-icon" aria-hidden="true">⌂</span><div><strong>SMART YIELD PROPERTY</strong><span>Your Bangalore property partner</span></div></div></div><a className="detail-back-link" href="/properties-search/">← Back to all properties</a></aside></div>
+ {related.length>0&&<section className="detail-related"><div className="detail-related-heading"><div><span className="detail-eyebrow">MORE TO EXPLORE</span><h2>A few more places to consider.</h2></div><a href="/properties-search/" className="detail-text-link">Explore all properties ↗</a></div><div className="listing-grid">{related.map(other=><PropertyCard key={other.id} property={other} onContact={onContact}/>)}</div></section>}
+ </article>;
 }
