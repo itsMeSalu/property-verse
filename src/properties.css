@@ -7,7 +7,7 @@
 .property-detail-page{padding:35px 5px 55px}
 .property-detail-back{display:inline-block;color:#777;margin-bottom:20px;font-size:14px}
 .property-detail-page h1{margin:0 0 10px;font-size:30px}
-.property-detail-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;margin:25px 0}
+.property-detail-layout{display:grid;grid-template-columns:1fr;gap:30px;margin:25px 0}
 .property-detail-image{width:100%;min-height:300px;border:1px solid #e1e1e1;border-radius:11px;object-fit:cover}
 .property-detail-overview{border:1px solid #e1e1e1;border-radius:11px;padding:30px;font-size:15px;line-height:24px}
 .property-detail-overview .price{font-size:23px;margin:8px 0 15px}
