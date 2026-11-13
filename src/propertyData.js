@@ -1,8 +1,12 @@
 import sourceProjects from './data/properties.json';
 import projectImages from './data/project-images.json';
 import regionMapping from './data/property-regions.json';
+import projectResearch from './data/property-research.json';
 
-const projects=sourceProjects.map(p=>projectImages[p.id]?{...p,image:projectImages[p.id].src,imageSource:projectImages[p.id]}:p);
+const projects=sourceProjects.map(source=>{
+ const research=projectResearch[source.id],image=projectImages[source.id];
+ return {...source,...(image?{image:image.src,imageSource:image}:{}),...(research?.rera?.ids?.length?{reraIds:research.rera.ids}:{}),reraResearch:research?.rera||null,mapLocation:research?.location||null};
+});
 export {projects};
 export const PAGE_SIZE=6;
 export const provided=value=>value??'Not provided';
@@ -101,3 +105,14 @@ export const priceRangeOptions=[];
 const priceGroupSize=Math.ceil(listedPrices.length/5);
 for(let i=0;i<listedPrices.length;i+=priceGroupSize){const min=listedPrices[i],max=listedPrices[Math.min(i+priceGroupSize-1,listedPrices.length-1)];priceRangeOptions.push({text:min===max?priceText(min):priceText(min)+' – '+priceText(max),value:min+':'+max});}
 if(projects.some(p=>p.priceFromLakh===null))priceRangeOptions.push({text:'Not provided',value:'missing'});
+
+// Keep supplied locality text intact; never treat a locality search as an exact pin.
+export function propertyMap(p){
+ if(!p.location?.trim())return null;
+ const pin=p.mapLocation;
+ const hasCoordinates=Number.isFinite(pin?.latitude)&&Number.isFinite(pin?.longitude)&&pin.latitude>=-90&&pin.latitude<=90&&pin.longitude>=-180&&pin.longitude<=180;
+ const hasEmbed=typeof pin?.embedUrl==='string'&&pin.embedUrl.startsWith('https://www.google.com/maps/embed?');
+ const exact=hasCoordinates||hasEmbed;
+ const query=hasCoordinates?`${pin.latitude},${pin.longitude}`:`${p.name}, ${p.location}, Karnataka, India`;
+ return {exact,sourceUrl:exact?pin.sourceUrl:null,url:pin?.mapsUrl||`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`,embedUrl:hasEmbed?pin.embedUrl:`https://www.google.com/maps?q=${encodeURIComponent(query)}&z=${exact?16:13}&output=embed`};
+}
