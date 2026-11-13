@@ -1,15 +1,11 @@
-# SMART YIELD PROPERTY — Courtyard Seal
+# SMART YIELD PROPERTY — selected logo
 
-The identity uses two embracing curved planes around a brass diamond. The open centre represents a considered space; the diamond represents a parcel of enduring value. It is an abstract property symbol, without a literal house, roof, skyline or growth arrow. The serif wordmark complements the website's editorial headings.
+The current identity is the logo image supplied by the user. Its ribbon-shaped S, buildings, plotted land, location marker, leaf and SMART YIELD PROPERTY lettering are preserved without redrawing or recoloring.
 
-## Production artwork
-
-- Header/light backgrounds: `public/images/smart-yield-logo.svg`.
-- Footer/dark backgrounds: `public/images/smart-yield-logo-light.svg`.
-- Standalone symbol: `public/brand/smart-yield-symbol.svg`.
+- Original supplied image: `public/images/brand/smart-yield-selected-logo.png`.
+- Website header/footer wrappers: `public/images/smart-yield-logo.svg` and `public/images/smart-yield-logo-light.svg`.
+- Symbol viewport: `public/brand/smart-yield-symbol.svg`.
 - Browser icon: `public/favicon.svg`.
-- Printable identity sheet: `public/brand/smart-yield-identity.pdf`.
+- PDF reference: `public/brand/smart-yield-identity.pdf`.
 
-Colors: forest green `#123e31`, muted brass `#b89a61`, and warm ivory `#f7f5ed`. The SVG artwork has a transparent background and scales without losing edge quality. Place the SVG directly in PDF or print layouts where supported; the identity sheet provides a portable reference.
-
-Preserve the proportions. Keep clear space of at least the height of the PROPERTY lettering around the lockup. Use the reversed version on dark backgrounds. Avoid stretching, gradients, shadows or changing the brass accent. The historic generated concept in `public/images/brand/` is retained as an archive and is not the current production logo.
+The SVG files embed the original raster image and trim its outer margins using a viewport; they are not vector redraws. The footer places the original image on white so the dark lettering stays readable. Preserve the original colors, proportions and artwork. Previous design directions are superseded.
