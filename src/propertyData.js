@@ -3,7 +3,9 @@ import projectImages from './data/project-images.json';
 import regionMapping from './data/property-regions.json';
 import projectResearch from './data/property-research.json';
 
-const projects=sourceProjects.map(source=>{
+// Publish only listings with a supplied price; retain the complete source inventory.
+export const hasListedPrice=p=>Boolean(p.advertisedPrice?.trim())||Number.isFinite(p.priceFromLakh);
+const projects=sourceProjects.filter(hasListedPrice).map(source=>{
  const research=projectResearch[source.id],image=projectImages[source.id];
  return {...source,...(image?{image:image.src,imageSource:image}:{}),...(research?.rera?.ids?.length?{reraIds:research.rera.ids}:{}),reraResearch:research?.rera||null,mapLocation:research?.location||null};
 });
