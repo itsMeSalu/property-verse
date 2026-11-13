@@ -351,3 +351,17 @@ footer{background:white;padding:50px 0 0}
 .newsroom-page{padding:54px 15px 60px}
 .newsroom-page>p{margin:0;background:#e8e8e8;border:1px solid #c4c4c4;padding:20px;color:#000;font:400 16px/26px 'Open Sans',Arial,sans-serif}
 @media(max-width:767px){.newsroom-page{padding:35px 10px 40px}}
+@media(min-width:768px){.offices{grid-template-columns:repeat(3,minmax(0,1fr));gap:35px}}
+
+/* A click-controlled menu avoids hover and native toggle conflicts. */
+nav .more{position:relative}nav .more summary{display:flex;align-items:center;gap:7px;min-height:36px;list-style:none;user-select:none}nav .more summary::-webkit-details-marker{display:none}nav .more summary:focus-visible{outline:2px solid #55734a;outline-offset:4px;border-radius:4px}nav .more summary .nav-caret{margin-left:0}nav .more[open] summary .nav-caret{transform:rotate(225deg)}nav .more>div{top:calc(100% + 8px);left:-16px;min-width:180px;padding:8px;background:#fff;border:1px solid #e0e7d9;border-radius:12px;box-shadow:0 10px 30px #18351d18;z-index:100}nav .more>div a{display:block;padding:10px 12px;border-radius:7px;white-space:nowrap;font:400 14px/1.5 Roboto,Arial,sans-serif;color:#40543a}nav .more>div a:hover,nav .more>div a:focus-visible{background:#eff4e9;color:#123e31}nav .more[open]::after{display:none}
+@media(max-width:767px){nav .more{width:100%}nav .more>div{position:static;min-width:0;margin-top:8px;box-shadow:none;background:#f7f9f3}nav .more summary{min-height:32px}}
+
+.enquiry-note{font-size:12px;line-height:1.6;color:#65735c;margin-top:12px}.contact-grid button:disabled,.callback-modal button[type=submit]:disabled{opacity:.6;cursor:wait}
+
+@media(max-width:767px){.mobile-toggle{background:#123e31;color:#fff}nav .nav-contact{background:#123e31;color:#fff}nav .home-active{color:#123e31}nav>a:hover{color:#345c43}nav .nav-contact:hover{background:#24543f;color:#fff}.mobile-toggle:focus-visible,nav a:focus-visible,nav summary:focus-visible{outline-color:#567c44}}
+
+/* The longer Smart Yield wordmark remains readable at every breakpoint. */
+header .nav-wrap>a:first-child{flex-shrink:0}header .nav-wrap .logo{width:210px;height:auto;display:block}header.home-header:has(+main .estate-home) .logo{width:205px}.estate-footer-grid>div:first-child>a>img{width:225px;max-width:100%;height:auto}header.home-header:has(+main .estate-home) nav{margin-left:5%}
+@media(min-width:768px) and (max-width:1100px){header .nav-wrap .logo{width:175px}header.home-header:has(+main .estate-home) .logo{width:175px}header.home-header:has(+main .estate-home) nav{margin-left:2%;gap:16px}}
+@media(max-width:767px){header .nav-wrap .logo,header.home-header:has(+main .estate-home) .logo{width:185px}header.home-header:has(+main .estate-home) nav{margin-left:0}.estate-footer-grid>div:first-child>a>img{width:210px}}

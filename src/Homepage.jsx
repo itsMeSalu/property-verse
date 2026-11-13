@@ -1,114 +1,52 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import data from './homeData.json';
-import locations from './dropdownOptions.json';
+import {projects,provided,projectPath,priceLabel,isClosed,isLegacy,propertyTypeOptions,propertyRegions,priceRangeOptions,projectTypes} from './propertyData.js';
 import './homepage.css';
-
-const processes = [
- ['Property Consulting','Our platform offers expert guidance and insights to help you explore properties, ensuring informed decisions and successful property transactions.'],
- ['Site Visit Assistance','We make property exploration easy by arranging and facilitating site visits, ensuring you experience potential homes firsthand.'],
- ['Negotiations','Our experts negotiate on your behalf to secure the best terms and prices, ensuring a smooth and favourable real estate deal.'],
- ['Best Deals','We curate and present the finest real estate opportunities, ensuring you access the best deals tailored to your preferences and budget.'],
- ['Home Loan Assistance','We navigate your home loan journey, connecting you with lenders to secure financing for your dream property.'],
-];
-function Heading({title,subtitle}){return <div className="home-heading"><h2>{title}</h2><p>{subtitle}</p></div>}
-function Arrow(){return <svg viewBox="0 0 24 20" aria-hidden="true"><path d="M1 10h20m-7-7 7 7-7 7"/></svg>}
-function SearchIcon(){return <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="m20 20 11 11"/></svg>}
-function Dots({count,active,onChange,label}){return <div className="home-dots">{Array.from({length:count},(_,i)=><button key={i} type="button" className={i===active?'active':''} aria-label={`${label} ${i+1}`} aria-current={i===active?'true':undefined} onClick={()=>onChange(i)}/>)}</div>}
-export default function Homepage({SearchSelect,renderProperty,properties}){
- const [city,setCity]=useState(''),[area,setArea]=useState(''),[keyword,setKeyword]=useState(''),[mobile,setMobile]=useState(()=>window.matchMedia('(max-width:767px)').matches);
- const [banner,setBanner]=useState(0),[builder,setBuilder]=useState(5),[award,setAward]=useState(()=>Math.max(0,data.awards.findIndex(a=>a.title==='NCC Urban'))),[review,setReview]=useState(5);
- const bannerRef=useRef(null),builderRef=useRef(null),awardRef=useRef(null),reviewRef=useRef(null),interacted=useRef({});
- useEffect(()=>{const query=window.matchMedia('(max-width:767px)');const update=()=>setMobile(query.matches);query.addEventListener('change',update);return()=>query.removeEventListener('change',update)},[]);
+const inventory=projects.filter(p=>!isClosed(p)&&!isLegacy(p));
+const serviceCategories=[['Apartments','Apartments/Flats','Compare apartment and flat projects by builder, location, configuration, and listed price.'],['Villas','Villas','Explore villa projects with the locations, configurations, and sizes provided in our collection.'],['Plots','Plots','Review plotted developments using the plot sizes, locations, and prices listed in our collection.']];
+const builderLogos={'SOBHA':'/images/home/builder-62.png','Assetz':'/images/home/builder-2.png','Puravankara':'/images/home/builder-72.png','Provident Housing':'/images/home/builder-3.png','Lodha':'/images/home/builder-1.png','Godrej Properties':'/images/home/builder-82.png'};
+const builderCollection=[...new Set(projects.map(p=>p.builder).filter(Boolean))].map(name=>({name,count:projects.filter(p=>p.builder===name).length}));
+const sourceBrandCount=new Set(projects.map(p=>p.sourceBrand).filter(Boolean)).size;
+const listings=inventory.filter(p=>p.priceFromLakh!==null&&p.configuration&&p.sizeSqFt).slice(0,4);
+const reviews=data.reviews.filter(r=>! /Balewadi|wakad|enjoying my role/i.test(r.text));
+const questions=[['How can I find a property in Bangalore?','Search by Bangalore region, property type, and price. Open a listing to see the project details supplied in our property information.'],['Which property types can I explore?','Our Bangalore listings include apartments, villas, and plotted developments. The available configurations and sizes are shown for each project.'],['Where can I find builder and project details?','Open View Details on any property to see its builder, location, configuration, size, listed price, and other available project information.'],['How can I arrange a site visit?','Choose Schedule Consultation to contact the SMART YIELD PROPERTY team about the projects you are interested in.'],['Where is the SMART YIELD PROPERTY Bangalore office?','Our corporate office is on the 5th Floor, Beta Block, Sigma Soft Tech Park, Whitefield, Bangalore – 560066. Call +91 63601 41698.']];
+function Arrow(){return <span aria-hidden="true">⟶</span>}
+const imagery={
+ 'Modern house hero':{src:'/images/placeholders/villa.jpg',alt:'Contemporary home with illuminated interiors and landscaped gardens'},
+ 'Featured villa — main photograph':{src:'/images/placeholders/villa.jpg',alt:'Modern home surrounded by trees'},
+ 'Featured villa — balcony':{src:'/images/placeholders/villa.jpg',alt:'Detail of the upper floor of a contemporary home',position:'25% 15%'},
+ 'Featured villa — entrance':{src:'/images/placeholders/villa.jpg',alt:'Illuminated entrance and terrace of a contemporary home',position:'85% 70%'},
+ 'Property photograph — balcony':{src:'/images/reference/property-2.jpg',alt:'Residential architecture surrounded by landscaped grounds'},
+ 'Property photograph — facade':{src:'/images/placeholders/apartments.jpg',alt:'Contemporary apartment building facade'},
+ 'Property photograph — evening':{src:'/images/reference/property-3.jpg',alt:'Residential building with distinctive architectural details'},
+ 'Insights — dark metal roof house':{src:'/images/placeholders/villa.jpg',alt:'Modern architectural exterior and landscaped garden'},
+ 'FAQ — dark metal roof house':{src:'/images/placeholders/villa.jpg',alt:'Contemporary home exterior'},
+ 'Consultation — evening house facade':{src:'/images/placeholders/villa.jpg',alt:'Warmly illuminated contemporary home at dusk'}
+};
+function ReferenceImage({name,className='',project}){const photo=project?.image?{src:project.image,alt:`${project.name} — builder-published project visual`,position:project.imageSource?.position}:imagery[name];const property=/Featured villa|Property photograph/.test(name);return <div className={`estate-image ${className}`}><img src={photo.src} alt={photo.alt} style={{objectPosition:photo.position||'center'}} loading={className==='estate-hero-photo'?'eager':'lazy'} fetchPriority={className==='estate-hero-photo'?'high':undefined}/>{property&&<small className="estate-image-caption">{project?.image?'Builder project visual':'Illustrative image'}</small>}</div>}
+function PropertyInfo({project:p,compact=false}){return <div className={`estate-property-info ${compact?'compact':''}`}><div className="estate-specs"><span>{provided(p.location)}</span><span>{provided(p.configuration)} / {provided(p.sizeSqFt)}</span></div><h3>{p.name}</h3><p className="estate-builder">{provided(p.builder)}</p><div className="estate-price"><strong>{priceLabel(p)}</strong><a href={projectPath(p)} className="estate-outline">View Details</a></div></div>}
+function ReviewCard({review:r}){const [expanded,setExpanded]=useState(false);const long=r.text.length>240;return <article className="estate-review-card"><span className="estate-quote" aria-hidden="true">“</span><p className={long&&!expanded?'estate-review-text is-collapsed':'estate-review-text'}>“{r.text}”</p>{long&&<button className="estate-review-more" aria-expanded={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?'Read less':'Read full review'}</button>}<div className="estate-review-person"><img src={r.image} alt="" loading="lazy"/><strong>{r.name}<small>Source: Prop Times client review</small></strong></div></article>}
+export default function Homepage({SearchSelect,onContact}){
+ const root=useRef(null),[type,setType]=useState(''),[region,setRegion]=useState(''),[price,setPrice]=useState(''),[faq,setFaq]=useState(null),[news,setNews]=useState(0),[review,setReview]=useState(0);
  useEffect(()=>{
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const timer=setInterval(()=>{
-   if(document.hidden)return;
-   if(!bannerRef.current?.matches(':hover')&&!interacted.current.banner)setBanner(i=>(i+1)%data.banners.length);
-   if(!awardRef.current?.matches(':hover')&&!interacted.current.award)setAward(i=>(i+1)%data.awards.length);
-   if(!reviewRef.current?.matches(':hover')&&!interacted.current.review)setReview(i=>i>=data.reviews.length?i:i+1);
-  },5000);return()=>clearInterval(timer);
+  const preference=window.matchMedia('(prefers-reduced-motion: reduce)');if(preference.matches)return;
+  const items=root.current.querySelectorAll('section:not(.estate-hero) h2, section:not(.estate-hero) > p, .estate-eyebrow, .estate-service-grid article, .estate-feature > div > p, .estate-feature > div > .estate-property-info, .estate-collage > .estate-image, .estate-property-grid article, .estate-news-heading > p, .estate-news-card, .estate-faq-grid > div, .estate-reviews article, .estate-contact .estate-white');
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('motion-visible');observer.unobserve(entry.target)}}),{threshold:0,rootMargin:'0px 0px -20px 0px'});
+  items.forEach(el=>{if(el.parentElement.matches('.estate-service-grid, .estate-property-grid, .estate-collage, .estate-reviews'))el.style.setProperty('--motion-delay',`${Array.from(el.parentElement.children).indexOf(el)*110}ms`);el.classList.add('motion-ready');observer.observe(el)});
+  const reveal=()=>{if(preference.matches)items.forEach(el=>el.classList.add('motion-visible'))};preference.addEventListener('change',reveal);return()=>{observer.disconnect();preference.removeEventListener('change',reveal)};
  },[]);
- const [builderSlide,setBuilderSlide]=useState(0);
- useEffect(()=>{
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const timer=setInterval(()=>{
-   if(!document.hidden&&!builderRef.current?.matches(':hover')&&!builderRef.current?.contains(document.activeElement))setBuilderSlide(i=>i>=data.builders.length?i:i+1);
-  },1000);
-  return()=>clearInterval(timer);
- },[]);
- const cities=locations.locations.filter(o=>!o.text.startsWith('-'));
- const cityStart=locations.locations.findIndex(o=>o.value===city);
- const nextCity=locations.locations.findIndex((o,i)=>i>cityStart&&!o.text.startsWith('-'));
- const areaOptions=(city?locations.locations.slice(cityStart+1,nextCity<0?locations.locations.length:nextCity):locations.locations).filter(o=>o.text.startsWith('-')).map(o=>({...o,text:o.text.replace(/^-\s*/, '')}));
- function search(e,type=''){
-  e?.preventDefault();const params=new URLSearchParams();if(city)params.set('location',city);if(area)params.set('area',area);if(keyword)params.set('keyword',keyword);if(type)params.set('type',type);window.location.assign('/properties-search/'+(params.size?'?'+params:''));
- }
- const featured=[
- ['Prestige Southern Star','home/southern-star','Prestige Southern Star is a 30+ acre township in Bangalore offering luxury living with scenic views of Begur Lake, lush greenery, stunning pools, and premium amenities for a serene, resort-like lifestyle every day.','82 L','1, 2, 3 & 4 BHK Apartment','695 - 2774','Akshaya Nagar, Bangalore','','₹82 L Onwards'],
- ['Prestige Suncrest','home/suncrest','Prestige Suncrest is a 6-acre premium residential project in Electronic City, offering 1, 2, and 3 BHK homes with lush green spaces, excellent connectivity, and proximity to metro, tech parks, schools, and hospitals.','71 L','1, 2 & 3 BHK Apartment','691 - 2005','Bangalore, Electronic City','','₹71 L Onwards'],
- [properties[5][0],'eternia-full',...properties[5].slice(2),'₹1.06 Cr Onwards'],[properties[4][0],'morgan-full',...properties[4].slice(2),'₹1.25 Cr Onwards'],
- ];
- const awardWindow=Array.from({length:mobile?1:5},(_,i)=>data.awards[(award+i)%data.awards.length]);
- const builderWindow=Array.from({length:data.builders.length},(_,i)=>data.builders[(builder+i)%data.builders.length]);
- const [expandedReviews,setExpandedReviews]=useState({});
- function moveReview(direction){interacted.current.review=true;setReview(i=>(i+direction+data.reviews.length)%data.reviews.length)}
- function stars(summary=false){return <div className={summary?'review-stars review-summary-stars':'review-stars'} aria-label={summary?'4.5 out of 5 stars':'5 out of 5 stars'}>{Array.from({length:5},(_,i)=><svg key={i} viewBox="0 0 24 24" aria-hidden="true"><defs>{summary&&i===4&&<linearGradient id="review-half-star"><stop offset="50%" stopColor="#fbbc04"/><stop offset="50%" stopColor="#ccc"/></linearGradient>}</defs><path fill={summary&&i===4?'url(#review-half-star)':'currentColor'} d="m12 1.5 3.2 6.8 7.4 1-5.4 5.2 1.3 7.5-6.5-3.6-6.5 3.6 1.3-7.5L.9 9.3l7.9-1z"/></svg>)}{!summary&&<span className="review-check" aria-label="Verified review">✓</span>}</div>}
-
- return <div className="home-content">
-  <section className="home-hero home-bleed" style={{backgroundImage:`url(${data.hero})`}}>
-   <div className="home-search-panel">
-    <h2 className="home-desktop-title">Find your <span>Dream home</span> with Prop Times</h2>
-    <h2 className="home-mobile-title">Find Your <span>Dream Home</span><br/>With Prop Times</h2>
-    <form className="home-search-form" onSubmit={search}>
-     <SearchSelect label="Select City" options={cities} value={city} onChange={e=>{setCity(e.target.value);setArea('')}} location/>
-     <SearchSelect label={mobile?'Select Area':'All Locations'} options={areaOptions} value={area} onChange={e=>setArea(e.target.value)} location/>
-     <input className="home-keyword" aria-label="Search properties" placeholder="Search for Apartments / Villas / Ready To Move..." value={keyword} onChange={e=>setKeyword(e.target.value)}/>
-     <button className="orange home-search-submit" type="submit" aria-label="Search properties"><SearchIcon/><span>Search</span></button>
-    </form>
-    <div className="home-hero-categories">{['Apartments','Villas','Plots','Ongoing','Pre Launch','Ready to Move'].map(type=><button className="muted-button" key={type} onClick={()=>search(null,type)}>{type}</button>)}</div>
-   </div>
-  </section>
-  <section className="home-cities home-bleed" style={{backgroundImage:`url(${data.cityBackground})`}}>
-   <Heading title="Explore Properties In Top Cities" subtitle="Look for new nest in cities you love."/>
-   <div className="home-city-grid">{data.cities.map(c=><a className="home-city-card" href={`/properties-search/?location=${c.name.toLowerCase()}`} key={c.name} style={{backgroundColor:c.color,'--city-image':`url(${c.image})`}}><h3>{c.name}</h3><span className="city-view">View Properties</span></a>)}</div>
-  </section>
-  <section className="home-builders" ref={builderRef}>
-   <Heading title="Prop Times Collaborates With India's Leading Builders" subtitle="Renowned builders, recognized for their exceptional quality, are frequently highlighted in the Prop Times."/>
-   <div className="home-builder-grid"><div className="home-builder-track" key={builder} onTransitionEnd={()=>{if(builderSlide===data.builders.length)setBuilderSlide(0)}} style={{'--builder-step':builderSlide,transition:builderSlide===0?'none':undefined,'--builder-count':data.builders.length,'--builder-duration':`${data.builders.length * 1.2}s`}}>{[...builderWindow,...builderWindow].map((b,i)=><div className="home-builder-logo" key={`${b.image}-${i}`} aria-hidden={i>=builderWindow.length?true:undefined}><img src={b.image} alt={b.name}/></div>)}</div></div>
-   <div className="home-builder-count"><button aria-label="Previous builders" onClick={()=>{interacted.current.builder=true;setBuilder(i=>(i-1+data.builders.length)%data.builders.length)}}>‹</button><span>{((builder-4+data.builders.length)%data.builders.length)+1} / {data.builders.length}</span><button aria-label="Next builders" onClick={()=>{interacted.current.builder=true;setBuilder(i=>(i+1)%data.builders.length)}}>›</button></div>
-  </section>
-  <section className="home-promotion" ref={bannerRef} aria-label="Featured property promotions">
-   <div className="home-promotion-images">{data.banners.map((src,i)=><a key={src} href="/properties-search/" className={i===banner?'active':''} aria-hidden={i!==banner} tabIndex={i===banner?0:-1}><img src={src} alt={['Brigade Eternia — Find joy in the journey.','Prestige Suncrest','Prestige Southern Star','Featured properties','Find your new home'][i]}/></a>)}</div>
-   <Dots count={data.banners.length} active={banner} onChange={i=>{interacted.current.banner=true;setBanner(i)}} label="Show promotion"/>
-  </section>
-  <section className="home-featured">
-   <Heading title="Properties You Might Like On Prop Times." subtitle="Prop Times presents a selection of properties that align with your specified criteria."/>
-   <div className="property-grid grid grid-cols-1 md:grid-cols-2">{featured.map(renderProperty)}</div>
-   <a className="orange home-more" href="/properties-search/">View More Properties <Arrow/></a>
-  </section>
-  <section className="home-process home-bleed">
-   <Heading title="Our Process At Prop Times" subtitle="Your Journey to a New Home Starts Here"/>
-   <div className="home-process-grid">{processes.map(([title,text],i)=><article className="home-process-card" key={title}><img src={data.process[i]} alt="" loading="lazy"/><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
-  </section>
-  <section className="home-blogs">
-   <Heading title="Explore Our Latest Blogs" subtitle="Stay Informed and Inspired"/>
-   <div className="home-blog-grid">{data.blogs.map(blog=><article className="home-blog-card" key={blog.title}><a href={blog.url}><img src={blog.image} alt={blog.name} loading="lazy"/></a><div className="home-blog-content"><div className="home-blog-meta"><a href="https://proptimes.org/category/project-review/">Project Review</a><time>{blog.date}</time></div><h3><a href={blog.url}>{blog.title}</a></h3><p>{blog.excerpt}</p></div></article>)}</div>
-   <a className="orange home-more" href="https://proptimes.org/blogs/">View More Blog <Arrow/></a>
-  </section>
-  <section className="home-awards home-bleed" ref={awardRef}>
-   <Heading title="Our Awards and Recognitions" subtitle="Recognizing Excellence in Real Estate"/>
-   <div className="home-award-grid">{awardWindow.map((a,i)=><article className="home-award" tabIndex="0" key={`${a.image}-${i}`}><img src={a.image} alt={a.title} loading="lazy"/><div className="home-award-back"><h3>{a.title}</h3><p>{a.description}</p></div></article>)}</div>
-   <Dots count={data.awards.length} active={(award-Math.max(0,data.awards.findIndex(a=>a.title==='NCC Urban'))+data.awards.length)%data.awards.length} onChange={i=>{interacted.current.award=true;setAward((i+Math.max(0,data.awards.findIndex(a=>a.title==='NCC Urban')))%data.awards.length)}} label="Show award"/>
-  </section>
-  <section className="home-reviews" ref={reviewRef}>
-   <Heading title="What our clients have to say" subtitle="Hear from Satisfied Homebuyers and Sellers"/>
-   <div className="home-review-layout">
-    <div className="home-review-summary"><strong>EXCELLENT</strong>{stars(true)}<p>Based on <b>201 reviews</b></p><img src={data.googleLogo} alt="Google"/></div>
-    <div className="home-review-slider">
-     <div className="home-review-viewport"><div className="home-review-track" style={{'--review-step':review,transition:review===0?'none':undefined}} onTransitionEnd={()=>{if(review===data.reviews.length)setReview(0)}}>{[...data.reviews,...data.reviews].map((r,i)=><article className="home-review-card" key={i} aria-hidden={i<review||i>=review+(mobile?1:3)}><div className="home-review-person"><img src={r.image} alt="" loading="lazy"/><div><strong>{r.name}</strong><span className="home-review-date">1 year ago</span></div><img className="home-review-google" src={data.googleIcon} alt="Google"/></div>{stars()}<p className={expandedReviews[r.name]?'expanded':''}>{r.text}</p>{r.text.length>125&&<button className="home-review-read" onClick={()=>setExpandedReviews(v=>({...v,[r.name]:!v[r.name]}))}>{expandedReviews[r.name]?'Read less':'Read more'}</button>}</article>)}</div></div>
-     <button className="home-review-arrow previous" aria-label="Previous reviews" onClick={()=>moveReview(-1)}><svg viewBox="0 0 20 20"><path d="m12 4-6 6 6 6"/></svg></button><button className="home-review-arrow next" aria-label="Next reviews" onClick={()=>moveReview(1)}><svg viewBox="0 0 20 20"><path d="m8 4 6 6-6 6"/></svg></button>
-    </div>
-   </div><p className="home-review-verified">Verified by Trustindex <span aria-hidden="true">ⓘ</span></p>
-  </section>
+ function search(e){e.preventDefault();const q=new URLSearchParams({location:'bangalore'});Object.entries({type,region,price}).forEach(([k,v])=>v&&q.set(k,v));window.location.assign('/properties-search/?'+q)}
+ const blog=data.blogs[news%data.blogs.length];
+ return <div className="estate-home" ref={root}>
+ <section className="estate-hero estate-container"><ReferenceImage name="Modern house hero" className="estate-hero-photo"/><div className="estate-hero-copy"><h1><span className="estate-title-line"><span>Find More Than a Home</span></span><span className="estate-title-line"><span>Build Your Future</span></span></h1><p>Discover apartments, villas, and plots across Bangalore with SMART YIELD PROPERTY. Explore real projects, compare builders, locations, configurations, and prices, and find a property that fits your plans.</p><div className="estate-buttons"><button className="estate-black" onClick={onContact}>Schedule Consultation</button><a className="estate-outline" href="/properties-search/">Explore Properties</a></div><form className="estate-search" onSubmit={search}><div><span>CATEGORY</span><strong>Buy Property</strong></div><SearchSelect label="LOCATION" options={propertyRegions} value={region} onChange={e=>setRegion(e.target.value)}/><SearchSelect label="TYPE" options={propertyTypeOptions} value={type} onChange={e=>setType(e.target.value)}/><SearchSelect label="PRICE" options={priceRangeOptions} value={price} onChange={e=>setPrice(e.target.value)}/><button type="submit" aria-label="Search properties" className="estate-search-go">↗</button></form></div></section>
+ <section className="estate-services estate-container estate-reveal"><span className="estate-eyebrow">OUR SERVICES</span><div><h2>Explore {projects.length} Bangalore Projects Across {sourceBrandCount} Property Brands. Compare Homes And Plots With Details To Guide Your Property Search.</h2><div className="estate-service-grid">{serviceCategories.map(([title,type,text])=><article key={title}><strong>{projects.filter(p=>projectTypes(p).includes(type)).length}</strong><h3>{title}</h3><p>Projects in our collection. {text}</p><a href={`/properties-search/?location=bangalore&type=${encodeURIComponent(type)}`} className="estate-service-link">Explore {title} <Arrow/></a></article>)}</div><p className="estate-service-note">Counts reflect classified projects in our collection, including completed and sold-out projects. Availability and prices vary by project.</p></div></section>
+ <section className="estate-feature estate-container estate-reveal"><div><h2>Bangalore Property Gems<br/>Discover Your Dream</h2><p>Explore projects from our Bangalore property collection. Compare real builder details, locations, configurations, sizes, and listed prices to take the next step in your property search.</p><PropertyInfo project={listings[0]}/></div><div className="estate-collage"><ReferenceImage name="Featured villa — main photograph" project={listings[0]}/><ReferenceImage name="Featured villa — balcony" project={listings[0]}/><ReferenceImage name="Featured villa — entrance" project={listings[0]}/></div></section>
+ <section className="estate-available estate-container estate-reveal" id="properties"><div className="estate-section-heading"><div><h2>Available Properties</h2><p>Explore Bangalore projects from our property collection.<br/>Review locations, configurations, builder details, and listed prices.</p></div><a href="/properties-search/" className="estate-black">View All Properties</a></div><div className="estate-property-grid">{listings.slice(1,4).map((p,i)=><article key={p.id}><a href={projectPath(p)}><ReferenceImage name={['Property photograph — balcony','Property photograph — facade','Property photograph — evening'][i]} project={p}/></a><PropertyInfo project={p} compact/></article>)}</div></section>
+ <section className="estate-builders" id="builders"><div className="estate-container"><div className="estate-builders-heading"><span className="estate-eyebrow">EXPLORE BY BUILDER</span><h2>The Names Behind<br/>Your Next Home</h2><p>Discover projects from {builderCollection.length} builders in our Bangalore collection.<br/>Choose a builder to explore their listings.</p></div><div className="estate-builder-grid">{builderCollection.map(({name,count})=><a className="estate-builder-card" href={`/properties-search/?location=bangalore&builder=${encodeURIComponent(name)}`} key={name}><div className="estate-builder-logo"><img src={builderLogos[name]} alt={name} loading="lazy"/></div><div className="estate-builder-meta"><span>{count} listed projects</span><span className="estate-builder-explore">Explore Projects <span aria-hidden="true">↗</span></span></div></a>)}</div><p className="estate-builders-note">Project counts include completed and sold-out listings.</p></div></section>
+ <section className="estate-news estate-reveal"><ReferenceImage name="Insights — dark metal roof house" className="estate-news-photo"/><div className="estate-news-heading"><h2>Insights &amp; News</h2><p>Explore SMART YIELD PROPERTY project reviews and property insights for Bangalore. Learn more about the projects, locations, and homes in your search.</p></div><article className="estate-news-card estate-content-enter" key={news}><span className="estate-news-tag">Project Review</span><time>• {blog.date}</time><h3>{blog.title}</h3><p>{blog.excerpt}</p><a href={blog.url}>Read More <Arrow/></a></article><div className="estate-news-controls"><button aria-label="Previous article" onClick={()=>setNews((news+data.blogs.length-1)%data.blogs.length)}>←</button><button aria-label="Next article" onClick={()=>setNews((news+1)%data.blogs.length)}>→</button></div></section>
+ <section className="estate-faq estate-container estate-reveal" id="faq"><h2>Frequently Asked Questions</h2><p>Find answers to common questions about exploring Bangalore properties with SMART YIELD PROPERTY.</p><div className="estate-faq-grid"><div>{questions.map(([q,answer],i)=><div className="estate-faq-item" key={q}><button id={`estate-faq-question-${i}`} aria-expanded={faq===i} aria-controls={`estate-faq-answer-${i}`} onClick={()=>setFaq(current=>current===i?null:i)}><span className="estate-faq-question-text">{q}</span><span className="estate-faq-icon" aria-hidden="true">{faq===i?'−':'+'}</span></button><div id={`estate-faq-answer-${i}`} role="region" aria-labelledby={`estate-faq-question-${i}`} hidden={faq!==i} className="estate-faq-inline-answer"><p>{answer}</p></div></div>)}</div><div className="estate-faq-answer" aria-hidden="true"><ReferenceImage name="FAQ — dark metal roof house"/></div></div></section>
+ <section className="estate-testimonials estate-container estate-reveal" id="testimonials"><div className="estate-section-heading"><div><span className="estate-eyebrow">CLIENT EXPERIENCES</span><h2>Client Testimonials</h2><p>Property buyer experiences originally shared with Prop Times.</p></div><div className="estate-review-controls"><button aria-label="Previous client reviews" onClick={()=>setReview(value=>(value+2)%3)}>←</button><button aria-label="Next client reviews" onClick={()=>setReview(value=>(value+1)%3)}>→</button></div></div><div className="estate-reviews" aria-live="polite">{Array.from({length:3},(_,i)=>reviews[(review*3+i)%reviews.length]).map(r=><ReviewCard review={r} key={r.name}/>)}</div><div className="estate-dots">{[0,1,2].map(i=><button aria-label={`Show client reviews ${i+1}`} aria-pressed={review===i} className={review===i?'selected':''} onClick={()=>setReview(i)} key={i}/>)}</div></section>
+ <section className="estate-contact" id="contact"><ReferenceImage name="Consultation — evening house facade"/><div><h2>Ready To Find Your<br/>Perfect Property?</h2><p>Connect with SMART YIELD PROPERTY to explore Bangalore properties<br/>and plan your next step.</p><button className="estate-white" onClick={onContact}>Schedule Consultation</button></div></section>
  </div>
 }
+export function HomepageFooter(){return <footer className="estate-footer" id="footer"><div className="estate-footer-grid estate-container"><div><a href="/"><img src="/images/smart-yield-logo-light.svg" alt="SMART YIELD PROPERTY"/></a><p>Explore Bangalore apartments, villas, and plots with SMART YIELD PROPERTY. Compare project information and connect with our property team.</p></div><div><h3>Properties</h3><a href="/properties-search/">All Properties</a><a href="/properties-search/?location=bangalore&category=Apartments">Apartments</a><a href="/properties-search/?location=bangalore&category=Villas">Villas</a><a href="/properties-search/?location=bangalore&category=Plots">Plots</a></div><div><h3>Company</h3><a href="/about-us/">About us</a><a href="/career/">Careers</a><a href="/blogs/">Blog</a><a href="/contact-us/">Contact</a><a href="/newsroom/">Newsroom</a></div><div><h3>Contact</h3><p>5th Floor, Beta Block,<br/>Sigma Soft Tech Park,<br/>Whitefield, Bangalore – 560066</p><a href="tel:+916360141698">+91 63601 41698</a><a href="mailto:operations@proptimes.org">operations@proptimes.org</a><a href="https://proptimes.org/privacy-policy">Privacy Policy</a></div></div><p className="estate-copyright">© 2026 SMART YIELD PROPERTY. All Rights Reserved.</p></footer>}
