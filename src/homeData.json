@@ -405,8 +405,9 @@
       "name": "Godrej Woodscapes",
       "title": "Godrej Woodscapes: a buyer’s guide",
       "excerpt": "Explore Godrej Woodscapes with a practical guide to location, home layouts, purchase costs and site-visit questions",
-      "image": "/images/home/blog-0.png",
-      "url": "/blogs/godrej-woodscapes/"
+      "image": "/images/projects/godrej-properties-godrej-woodscapes.jpg",
+      "url": "/blogs/godrej-woodscapes/",
+      "imagePosition": "center bottom"
     },
     {
       "name": "Brigade Misty Green",
