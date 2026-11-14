@@ -403,35 +403,31 @@
   "blogs": [
     {
       "name": "Godrej Woodscapes",
-      "date": "Mar 21, 2025",
-      "title": "Godrej Woodscapes Project Review | Review #46",
-      "excerpt": "Godrej Woodscapes Project Review | Review #46 Imagine living in",
+      "title": "Godrej Woodscapes: a buyer’s guide",
+      "excerpt": "Explore Godrej Woodscapes with a practical guide to location, home layouts, purchase costs and site-visit questions",
       "image": "/images/home/blog-0.png",
-      "url": "https://proptimes.org/godrej-woodscapes/"
+      "url": "/blogs/godrej-woodscapes/"
     },
     {
       "name": "Brigade Misty Green",
-      "date": "Mar 19, 2025",
-      "title": "Brigade Misty Green Project Review | Review #45",
-      "excerpt": "Brigade Misty Green Project Review | Review #45 Nestled in",
+      "title": "Brigade Misty Green: a buyer’s guide",
+      "excerpt": "Explore Brigade Misty Green with a practical guide to location, home layouts, purchase costs and site-visit questions",
       "image": "/images/home/blog-1.png",
-      "url": "https://proptimes.org/brigade-misty-green/"
+      "url": "/blogs/brigade-misty-green/"
     },
     {
       "name": "Prestige Suncrest",
-      "date": "Mar 14, 2025",
-      "title": "Prestige Suncrest Project Review | Review #44",
-      "excerpt": "Prestige Suncrest Project Review | Review #44 Welcome to Prestige",
+      "title": "Prestige Suncrest: a buyer’s guide",
+      "excerpt": "Explore Prestige Suncrest with a practical guide to location, home layouts, purchase costs and site-visit questions",
       "image": "/images/home/blog-2.png",
-      "url": "https://proptimes.org/prestige-suncrest/"
+      "url": "/blogs/prestige-suncrest/"
     },
     {
       "name": "Sobha Ayana",
-      "date": "Mar 07, 2025",
-      "title": "Sobha Ayana Project Review | Review #43",
-      "excerpt": "Sobha Ayana Project Review | Review #43 Welcome to the",
+      "title": "Sobha Ayana: a buyer’s guide",
+      "excerpt": "Explore Sobha Ayana with a practical guide to location, home layouts, purchase costs and site-visit questions",
       "image": "/images/home/blog-3.png",
-      "url": "https://proptimes.org/sobha-ayana/"
+      "url": "/blogs/sobha-ayana/"
     }
   ],
   "awards": [

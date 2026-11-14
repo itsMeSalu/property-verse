@@ -18,8 +18,8 @@
 .property-detail-fields dd{margin:0;font-size:15px;line-height:24px;overflow-wrap:anywhere}
 .property-detail-notes,.property-detail-sources{font-size:14px;line-height:24px;color:#555}
 .property-detail-sources h2{font-size:23px;margin:25px 0 10px}
-.property-detail-sources a{color:#c96500;overflow-wrap:anywhere}
-.property-detail-sources a:hover{color:#ff8200}
+.property-detail-sources a{color:#004d3f;overflow-wrap:anywhere}
+.property-detail-sources a:hover{color:#006653}
 @media(max-width:767px){.property-detail-layout{grid-template-columns:1fr;gap:20px}.property-detail-fields{grid-template-columns:1fr 1fr;gap:20px;padding:15px}.property-detail-overview{padding:20px}.property-detail-image{min-height:220px}.imported-property-image{width:100%;min-height:220px}.imported-flat-image{height:240px}}
 .property-visual{position:relative;width:100%;height:100%;overflow:hidden;background:#f4f4f4}
 .property-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -29,7 +29,7 @@
 .imported-flats .flats-grid article{height:auto;display:flex;flex-direction:column}
 .imported-flats .flat-content{display:flex;flex-direction:column;flex:1;padding:20px}
 .imported-flats .flat-content h3{margin:8px 0 18px;min-height:50px}
-.imported-flats .flat-content .flat-price{font-size:17px;line-height:25px;white-space:normal;display:block;margin:0;color:#ff8200;min-height:25px}
+.imported-flats .flat-content .flat-price{font-size:17px;line-height:25px;white-space:normal;display:block;margin:0;color:#006653;min-height:25px}
 .imported-flats .flat-content .imported-flat-price-label{font-size:11px;line-height:17px;color:#777}
 .imported-flat-specs{margin:0 0 20px;display:grid;gap:11px}
 .imported-flat-specs>div{display:grid;grid-template-columns:60px minmax(0,1fr);gap:10px}
