@@ -51,3 +51,5 @@ header:has(+main .estate-home){height:108px;border:0}.home-header:has(+main .est
 /* A transparent emblem and crisp light wordmark sit directly on the footer. */
 .estate-footer .estate-footer-grid .estate-footer-brand{display:flex;align-items:center;gap:17px;width:max-content;max-width:100%;margin:0 0 24px;padding:0;background:transparent;text-decoration:none}
 .estate-footer .estate-footer-grid .estate-footer-new-logo{display:block;width:165px;height:auto;aspect-ratio:260/174;max-width:100%;padding:0;background:transparent;object-fit:contain}
+
+.estate-builder-name{display:block;text-align:center;font:500 clamp(18px,2vw,26px)/1.25 Georgia,serif;color:#214e3d;letter-spacing:-.3px;padding:12px}
