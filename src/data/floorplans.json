@@ -139,8 +139,16 @@
     ]
   },
   "sobha-chartered-birdsong": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-chartered-birdsong/2e3fc2b6f75f5bab.webp",
+        "label": "Plot layout",
+        "width": 1500,
+        "height": 938,
+        "kind": "site"
+      }
+    ]
   },
   "sobha-sobha-neopolis": {
     "status": "available",
@@ -431,24 +439,119 @@
     ]
   },
   "sobha-sobha-athena": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-athena/efc6ba5cf9d7be0b.webp",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1372,
+        "height": 2300,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-athena/145fcb4e545783c5.webp",
+        "label": "3 BHK \u00b7 Layout 2",
+        "width": 1372,
+        "height": 2300,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-athena/11aa0774ae045060.webp",
+        "label": "3 BHK \u00b7 Layout 3",
+        "width": 1372,
+        "height": 2300,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-hrc-pristine": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-hrc-pristine/1440e36d49aee289.jpg",
+        "label": "Layout 1",
+        "width": 1000,
+        "height": 816,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-hrc-pristine/18f07bc3a7085306.jpg",
+        "label": "Layout 2",
+        "width": 1000,
+        "height": 626,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-chartered-windsong-phase-2": {
     "status": "request",
     "plans": []
   },
   "sobha-sobha-palm-court": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-palm-court/7fabe67db114f562.webp",
+        "label": "Layout 1",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-palm-court/1d8560d0c605bba3.webp",
+        "label": "Layout 2",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-palm-court/e7ae7277182d3652.webp",
+        "label": "Layout 3",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-palm-court/3d70742300d45357.webp",
+        "label": "2 BHK \u00b7 Layout 4",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-lifestyle-legacy": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-lifestyle-legacy/de651f2fcc9d49dc.webp",
+        "label": "Zephyr \u00b7 Floor plan",
+        "width": 1400,
+        "height": 952,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-lifestyle-legacy/16e4f1ee39e4df8f.webp",
+        "label": "Eurus \u00b7 Floor plan",
+        "width": 1400,
+        "height": 952,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-lifestyle-legacy/33fd352c24e9e026.webp",
+        "label": "Boreas \u00b7 Floor plan",
+        "width": 1400,
+        "height": 952,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-lifestyle-legacy/a2b55c9cd52149a2.webp",
+        "label": "Notus \u00b7 Floor plan",
+        "width": 1400,
+        "height": 952,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-victoria-park-row-houses": {
     "status": "available",
@@ -778,16 +881,89 @@
     ]
   },
   "sobha-sobha-clovelly": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-clovelly/86bfd553571446e1.webp",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-clovelly/3e3547240638e995.webp",
+        "label": "Layout 2",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-rajvilas": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-rajvilas/6f584ed6cefe639c.webp",
+        "label": "Layout 1",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-rajvilas/41ea073245e2d52c.webp",
+        "label": "Layout 2",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-rajvilas/f379e5268c090c15.webp",
+        "label": "Layout 3",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-rajvilas/83b980c8e15c95e2.webp",
+        "label": "4 BHK \u00b7 Layout 4",
+        "width": 1400,
+        "height": 1858,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-25-richmond": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-25-richmond/41866a867589f25c.webp",
+        "label": "Layout 1",
+        "width": 1400,
+        "height": 990,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-25-richmond/90725245e8025f75.webp",
+        "label": "Layout 2",
+        "width": 1400,
+        "height": 990,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-25-richmond/b86d0abe41020198.webp",
+        "label": "Layout 3",
+        "width": 1400,
+        "height": 990,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-25-richmond/225458182cf09823.webp",
+        "label": "Layout 4",
+        "width": 1400,
+        "height": 990,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-avenue-apartments": {
     "status": "request",
@@ -838,8 +1014,37 @@
     "plans": []
   },
   "sobha-sobha-marvella": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-marvella/749a97aa1d9bc2b3.jpg",
+        "label": "Layout 1",
+        "width": 742,
+        "height": 515,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-marvella/90a383f0ebf6f1a8.jpg",
+        "label": "Layout 2",
+        "width": 684,
+        "height": 526,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-marvella/bd73d1c0fa81fec8.jpg",
+        "label": "Layout 3",
+        "width": 674,
+        "height": 516,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-marvella/3a5c1626443892a8.jpg",
+        "label": "Layout 4",
+        "width": 786,
+        "height": 514,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-habitech": {
     "status": "available",
@@ -1160,8 +1365,37 @@
     ]
   },
   "sobha-sobha-dewflower": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/sobha-sobha-dewflower/e43ae6486bc16528.webp",
+        "label": "Layout 1",
+        "width": 1500,
+        "height": 1500,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-dewflower/8e95257a1850b336.webp",
+        "label": "Layout 2",
+        "width": 1500,
+        "height": 1500,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-dewflower/bf645985863f3abd.webp",
+        "label": "Layout 3",
+        "width": 1500,
+        "height": 1500,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/sobha-sobha-dewflower/6e2f36cd7721ea28.webp",
+        "label": "Layout 4",
+        "width": 1500,
+        "height": 1500,
+        "kind": "unit"
+      }
+    ]
   },
   "sobha-sobha-forest-edge": {
     "status": "available",
@@ -1379,8 +1613,16 @@
     ]
   },
   "assetz-the-secret-lake": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-the-secret-lake/003e933280583b58.webp",
+        "label": "Plot layout",
+        "width": 1600,
+        "height": 2838,
+        "kind": "site"
+      }
+    ]
   },
   "assetz-trees-tandem": {
     "status": "available",
@@ -1471,12 +1713,28 @@
     ]
   },
   "assetz-66-shibui": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-66-shibui/8b21b2462acd5127.webp",
+        "label": "4 BHK \u00b7 Layout 1",
+        "width": 1600,
+        "height": 2271,
+        "kind": "unit"
+      }
+    ]
   },
   "assetz-promise-of-spring": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-promise-of-spring/10de685f3b72dd49.webp",
+        "label": "Plot layout",
+        "width": 1000,
+        "height": 908,
+        "kind": "site"
+      }
+    ]
   },
   "assetz-canvas-cove": {
     "status": "available",
@@ -1510,8 +1768,16 @@
     ]
   },
   "assetz-18-oak": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-18-oak/a79442b2923f026b.jpg",
+        "label": "Plot layout",
+        "width": 5792,
+        "height": 2559,
+        "kind": "site"
+      }
+    ]
   },
   "assetz-atmos-aura": {
     "status": "available",
@@ -1576,16 +1842,82 @@
     ]
   },
   "assetz-marq-2a-and-2b": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-marq-2a-and-2b/972e5c3410d32dd1.jpg",
+        "label": "3 BHK \u00b7 Tower 6/7 \u00b7 Layout 1",
+        "width": 1792,
+        "height": 2168,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-marq-2a-and-2b/8a9a0cc8546dd98c.jpg",
+        "label": "3 BHK \u00b7 Tower 6/7 \u00b7 Layout 2",
+        "width": 1793,
+        "height": 2168,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-marq-2a-and-2b/336071a16a20e57d.jpg",
+        "label": "3 BHK \u00b7 Tower 6/7 \u00b7 Layout 3",
+        "width": 1793,
+        "height": 2168,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-marq-2a-and-2b/81b029c7604fc727.jpg",
+        "label": "4 BHK \u00b7 Tower 6/7 \u00b7 Layout 4",
+        "width": 1793,
+        "height": 2168,
+        "kind": "unit"
+      }
+    ]
   },
   "assetz-leaves-lives-phase-1": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-leaves-lives-phase-1/34ac97af1dadf747.webp",
+        "label": "4 BHK \u00b7 Layout 1",
+        "width": 1600,
+        "height": 2441,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-leaves-lives-phase-1/f175872972bc2f48.webp",
+        "label": "4 BHK \u00b7 Layout 2",
+        "width": 1600,
+        "height": 2441,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-leaves-lives-phase-1/a749a93c97da196c.webp",
+        "label": "4 BHK \u00b7 Layout 3",
+        "width": 1600,
+        "height": 2441,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/assetz-leaves-lives-phase-1/dbb8ae6ee94a845c.webp",
+        "label": "4 BHK \u00b7 Layout 4",
+        "width": 1600,
+        "height": 2441,
+        "kind": "unit"
+      }
+    ]
   },
   "assetz-38-banyan": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-38-banyan/77e38f1f17596e5b.png",
+        "label": "4 BHK \u00b7 Layout 1",
+        "width": 682,
+        "height": 897,
+        "kind": "unit"
+      }
+    ]
   },
   "assetz-here-now": {
     "status": "available",
@@ -1641,8 +1973,16 @@
     "plans": []
   },
   "assetz-lumos": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/assetz-lumos/7e1f858d5203ef1b.jpg",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1366,
+        "height": 768,
+        "kind": "unit"
+      }
+    ]
   },
   "assetz-63-degree-east": {
     "status": "available",
@@ -1935,8 +2275,16 @@
     ]
   },
   "puravankara-northern-waves": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-northern-waves/85684f5ec1e3fd02.jpg",
+        "label": "Layout 1",
+        "width": 1076,
+        "height": 761,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-seasons": {
     "status": "request",
@@ -2010,24 +2358,91 @@
     "plans": []
   },
   "puravankara-purva-skydale": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-skydale/273029e81457a3d6.jpg",
+        "label": "Layout 1",
+        "width": 1100,
+        "height": 707,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-skydale/1e47c5da866856b5.jpg",
+        "label": "Layout 2",
+        "width": 1100,
+        "height": 532,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-skydale/a8600d5036e85119.jpg",
+        "label": "Layout 3",
+        "width": 1100,
+        "height": 619,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-promenade": {
     "status": "request",
     "plans": []
   },
   "puravankara-purva-whitehall": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-whitehall/a0a4981c54e6edb6.jpg",
+        "label": "Layout 1",
+        "width": 2700,
+        "height": 1900,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-whitehall/75559a6d4af6d9f2.jpg",
+        "label": "Layout 2",
+        "width": 2700,
+        "height": 1900,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-whitehall/3fa9e1a60a3673de.jpg",
+        "label": "Layout 3",
+        "width": 2700,
+        "height": 1700,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-whitehall/f17d20d101da0f79.jpg",
+        "label": "Layout 4",
+        "width": 2700,
+        "height": 1900,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-coronation-square": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-coronation-square/8308a6a65f770b87.jpg",
+        "label": "Layout 1",
+        "width": 596,
+        "height": 843,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-venezia": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-venezia/8223cc61efc3dba8.webp",
+        "label": "2 BHK \u00b7 Layout 1",
+        "width": 1500,
+        "height": 1084,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-the-sound-of-water": {
     "status": "available",
@@ -2077,8 +2492,16 @@
     ]
   },
   "puravankara-purva-atria-platina": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-atria-platina/8fdc66ec3e65e86f.jpg",
+        "label": "Layout 1",
+        "width": 750,
+        "height": 600,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-skywood": {
     "status": "request",
@@ -2108,16 +2531,68 @@
     "plans": []
   },
   "puravankara-purva-palm-beach": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-palm-beach/459a9b37394f1bb4.jpg",
+        "label": "Layout 1",
+        "width": 1755,
+        "height": 1755,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-palm-beach/3d730e32dbaaf9cb.jpg",
+        "label": "Layout 2",
+        "width": 1727,
+        "height": 1727,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-smiling-willows": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-smiling-willows/750bfdd6be23e55a.jpg",
+        "label": "Layout 1",
+        "width": 1200,
+        "height": 747,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-tiara": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-tiara/f86be66f4c34f41a.jpg",
+        "label": "Layout 1",
+        "width": 1000,
+        "height": 700,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-tiara/077db226dd4b6aa3.jpg",
+        "label": "Layout 2",
+        "width": 1000,
+        "height": 700,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-tiara/f33fb13d3dbaada2.jpg",
+        "label": "Layout 3",
+        "width": 700,
+        "height": 1000,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/puravankara-purva-tiara/e4e10a3316444d1d.jpg",
+        "label": "Layout 4",
+        "width": 1000,
+        "height": 700,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-parkhill": {
     "status": "available",
@@ -2226,12 +2701,28 @@
     "plans": []
   },
   "puravankara-purva-zentech": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-zentech/32a0c1bd3d6d2c65.jpg",
+        "label": "Layout 1",
+        "width": 8334,
+        "height": 8334,
+        "kind": "unit"
+      }
+    ]
   },
   "puravankara-purva-gainz": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/puravankara-purva-gainz/04ef094f4bb0166c.jpg",
+        "label": "Layout 1",
+        "width": 990,
+        "height": 700,
+        "kind": "unit"
+      }
+    ]
   },
   "provident-housing-provident-botanico": {
     "status": "available",
@@ -2411,12 +2902,28 @@
     ]
   },
   "provident-housing-provident-capella": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/provident-housing-provident-capella/f5bc458dbd126531.jpg",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1600,
+        "height": 900,
+        "kind": "unit"
+      }
+    ]
   },
   "provident-housing-provident-toogoodhomes": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/provident-housing-provident-toogoodhomes/6ebb651468eebebf.webp",
+        "label": "2 BHK \u00b7 Layout 1",
+        "width": 1601,
+        "height": 1133,
+        "kind": "unit"
+      }
+    ]
   },
   "provident-housing-provident-welworth-city": {
     "status": "available",
@@ -2481,8 +2988,23 @@
     "plans": []
   },
   "lodha-lodha-elanza": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/lodha-lodha-elanza/976f404662e1abf1.webp",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 2000,
+        "height": 1111,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/lodha-lodha-elanza/d3b6f6ecf2b167e9.webp",
+        "label": "3 BHK \u00b7 Layout 2",
+        "width": 2000,
+        "height": 1111,
+        "kind": "unit"
+      }
+    ]
   },
   "lodha-lodha-azur": {
     "status": "available",
@@ -2530,8 +3052,23 @@
     ]
   },
   "lodha-lodha-mirabelle": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/lodha-lodha-mirabelle/f46b03957acdce81.webp",
+        "label": "Layout 1",
+        "width": 2000,
+        "height": 1111,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/lodha-lodha-mirabelle/450caa50440f6da0.webp",
+        "label": "Layout 2",
+        "width": 2000,
+        "height": 1111,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-woodscapes": {
     "status": "available",
@@ -2567,12 +3104,70 @@
     ]
   },
   "godrej-properties-godrej-lakeside-orchard": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/b295a8772c04382f.webp",
+        "label": "3.5 BHK \u00b7 Layout 1",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/81effef9c74aa863.webp",
+        "label": "4.5 BHK \u00b7 Layout 2",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/306aacf7f9040728.webp",
+        "label": "Layout 3",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/dd83a2c085d90dd2.webp",
+        "label": "Layout 4",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-barca-at-godrej-msr-city": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/35666b5012d73a84.webp",
+        "label": "Layout 1",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/f52db98e639b00f2.webp",
+        "label": "3 BHK \u00b7 Layout 2",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/1878bb1ed19915d2.webp",
+        "label": "3 BHK \u00b7 Layout 3",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/25de87504a02865a.webp",
+        "label": "3 BHK \u00b7 Layout 4",
+        "width": 1600,
+        "height": 1132,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-tiara": {
     "status": "available",
@@ -2810,12 +3405,49 @@
     ]
   },
   "godrej-properties-godrej-avenues": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-avenues/c7bb35ad555b8090.webp",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1500,
+        "height": 1061,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-avenues/c80483142ffef1ff.webp",
+        "label": "3 BHK \u00b7 Layout 2",
+        "width": 1500,
+        "height": 1061,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-avenues/73329f3cf8db5902.webp",
+        "label": "3 BHK \u00b7 Layout 3",
+        "width": 1500,
+        "height": 1061,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-avenues/0e4e3cf048c85a45.webp",
+        "label": "3 BHK \u00b7 Layout 4",
+        "width": 1500,
+        "height": 1061,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-reserve": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-reserve/e34a9b66147f326d.webp",
+        "label": "Plot layout",
+        "width": 1600,
+        "height": 960,
+        "kind": "site"
+      }
+    ]
   },
   "godrej-properties-godrej-24": {
     "status": "available",
@@ -2884,12 +3516,49 @@
     ]
   },
   "godrej-properties-godrej-united": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-united/1dc53a6b7c93b639.webp",
+        "label": "2.5 BHK \u00b7 Layout 1",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-air": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-air/0b26726fd0085429.webp",
+        "label": "1 BHK \u00b7 Layout 1",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-air/b671418361540835.webp",
+        "label": "1 BHK \u00b7 Layout 2",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-air/56d232fb5358eb32.webp",
+        "label": "1 BHK \u00b7 Layout 3",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      },
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-air/9a9f2eebb259289b.webp",
+        "label": "1 BHK \u00b7 Layout 4",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-aqua": {
     "status": "available",
@@ -2998,8 +3667,16 @@
     ]
   },
   "godrej-properties-godrej-royale-woods": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-royale-woods/e27d42ba8abcfebe.webp",
+        "label": "Layout 1",
+        "width": 1400,
+        "height": 991,
+        "kind": "unit"
+      }
+    ]
   },
   "godrej-properties-godrej-splendour": {
     "status": "available",
@@ -3049,12 +3726,28 @@
     ]
   },
   "godrej-properties-godrej-woodland": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/godrej-properties-godrej-woodland/96ebae001818c7b7.webp",
+        "label": "Plot layout",
+        "width": 1600,
+        "height": 2845,
+        "kind": "site"
+      }
+    ]
   },
   "casatrance-skanda-aura": {
-    "status": "request",
-    "plans": []
+    "status": "available",
+    "plans": [
+      {
+        "src": "/images/floorplans/casatrance-skanda-aura/8b903fad8bada965.webp",
+        "label": "3 BHK \u00b7 Layout 1",
+        "width": 1920,
+        "height": 873,
+        "kind": "unit"
+      }
+    ]
   },
   "casatrance-needs-3-project-168": {
     "status": "available",

@@ -407,28 +407,35 @@
       "excerpt": "Explore Godrej Woodscapes with a practical guide to location, home layouts, purchase costs and site-visit questions",
       "image": "/images/projects/godrej-properties-godrej-woodscapes.jpg",
       "url": "/blogs/godrej-woodscapes/",
-      "imagePosition": "center bottom"
+      "imagePosition": "center bottom",
+      "imageKind": "project"
     },
     {
       "name": "Brigade Misty Green",
       "title": "Brigade Misty Green: a buyer’s guide",
       "excerpt": "Explore Brigade Misty Green with a practical guide to location, home layouts, purchase costs and site-visit questions",
-      "image": "/images/home/blog-1.png",
-      "url": "/blogs/brigade-misty-green/"
+      "image": "/images/placeholders/apartments.jpg",
+      "url": "/blogs/brigade-misty-green/",
+      "imagePosition": "center",
+      "imageKind": "illustrative"
     },
     {
       "name": "Prestige Suncrest",
       "title": "Prestige Suncrest: a buyer’s guide",
       "excerpt": "Explore Prestige Suncrest with a practical guide to location, home layouts, purchase costs and site-visit questions",
-      "image": "/images/home/blog-2.png",
-      "url": "/blogs/prestige-suncrest/"
+      "image": "/images/placeholders/apartments.jpg",
+      "url": "/blogs/prestige-suncrest/",
+      "imagePosition": "75% center",
+      "imageKind": "illustrative"
     },
     {
       "name": "Sobha Ayana",
       "title": "Sobha Ayana: a buyer’s guide",
       "excerpt": "Explore Sobha Ayana with a practical guide to location, home layouts, purchase costs and site-visit questions",
-      "image": "/images/home/blog-3.png",
-      "url": "/blogs/sobha-ayana/"
+      "image": "/images/projects/sobha-sobha-ayana.jpg",
+      "url": "/blogs/sobha-ayana/",
+      "imagePosition": "center",
+      "imageKind": "project"
     }
   ],
   "googleLogo": "/images/home/google-logo.svg",

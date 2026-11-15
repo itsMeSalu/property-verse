@@ -201,8 +201,8 @@
   },
   "sobha-chartered-birdsong": {
     "name": "CHARTERED BIRDSONG",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
       "https://www.sobha.com/bengaluru/chartered-birdsong/"
     ],
@@ -213,8 +213,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-chartered-birdsong/2e3fc2b6f75f5bab.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2026/09/chartered_birdsong_masterplan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "2e3fc2b6f75f5bab0eb0dd6cd4f1422218069a4ee047b1a458894089ffb7b4b6",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-neopolis": {
     "name": "SOBHA NEOPOLIS",
@@ -616,10 +626,12 @@
   },
   "sobha-sobha-athena": {
     "name": "SOBHA ATHENA",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.sobha.com/bengaluru/sobha-athena/"
+      "https://www.sobha.com/bengaluru/SOBHA-athena",
+      "https://www.sobha.com/bengaluru/sobha-athena/",
+      "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Athena-Floor-Plans.pdf"
     ],
     "searchAttempts": [
       {
@@ -638,15 +650,44 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-athena/efc6ba5cf9d7be0b.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Athena-Floor-Plans.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "efc6ba5cf9d7be0bcfa2e87b7a392fd92077bad6808eeb860b34d3fd4f89dbf7",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-athena/145fcb4e545783c5.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Athena-Floor-Plans.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "145fcb4e545783c54070e9b92aad22257741bc221f42eebfcd1b13ac4c918a95",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-athena/11aa0774ae045060.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Athena-Floor-Plans.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "11aa0774ae04506025288a573a225500b8bbe501f2f401c3ab4bf8894b39c492",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-hrc-pristine": {
     "name": "SOBHA HRC PRISTINE",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://files.propertywala.com/pdf/78/sobha-hrc-pristine-bangalore.J557911902.pdf"
+      "https://hrcpristineblr.sobha.com/",
+      "https://www.sobha.com/bengaluru/sobha-hrc-pristine/"
     ],
     "searchAttempts": [
       {
@@ -655,8 +696,27 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-hrc-pristine/1440e36d49aee289.jpg",
+        "originUrl": "https://hrcpristineblr.sobha.com/images/floor-plan/hrcp-type-1-big.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "1440e36d49aee28953e56ff23a02f39b02b11e10fb9798ac4455c87bdc180d31",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-hrc-pristine/18f07bc3a7085306.jpg",
+        "originUrl": "https://hrcpristineblr.sobha.com/images/floor-plan/hrcp-type-3-big.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "18f07bc3a708530638d2b405e4f347755ef44fbf59ab93ec02ec16f084489153",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-chartered-windsong-phase-2": {
     "name": "Chartered Windsong Phase 2",
@@ -677,10 +737,11 @@
   },
   "sobha-sobha-palm-court": {
     "name": "SOBHA PALM COURT",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://img.staticmb.com/mbimages/reradoc/2025/09/24/5054187AgreementtoSellPalmCourt_2_2.pdf"
+      "https://www.sobha.com/bengaluru/sobha-palm-court/",
+      "https://www.sobha.com/bengaluru/SOBHA-palm-court"
     ],
     "searchAttempts": [
       {
@@ -694,15 +755,52 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-palm-court/7fabe67db114f562.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Palm-Court-Floor-Plan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "7fabe67db114f562012df29a877346030bd4e4b0dc2d7e8b8b4479aed8447636",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-palm-court/1d8560d0c605bba3.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Palm-Court-Floor-Plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "1d8560d0c605bba30ae405401cf63108aa4b19dc747ba7f071c0919e137060c0",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-palm-court/e7ae7277182d3652.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Palm-Court-Floor-Plan.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "e7ae7277182d365245b9435aada6cbed65456fd117cb3618e6699f5bc0092953",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-palm-court/3d70742300d45357.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Palm-Court-Floor-Plan.pdf",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "3d70742300d453572c62a0f392c7382b1e9acdc907fe21c9c13306ec7022b032",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-lifestyle-legacy": {
     "name": "SOBHA LIFESTYLE LEGACY",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://housing-is-01.s3.amazonaws.com/6a32315a/1fc6b99aaf8e7910fc74b742001049f3/original.pdf"
+      "https://www.sobha.com/bengaluru/sobha-lifestyle-legacy/"
     ],
     "searchAttempts": [
       {
@@ -716,8 +814,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-lifestyle-legacy/de651f2fcc9d49dc.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Lifestyle-Legacy-Floor-Plan-1.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "de651f2fcc9d49dc29b0a295637e0b7ccfa2e9d169536075be2b3990b68d8a64",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-lifestyle-legacy/16e4f1ee39e4df8f.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Lifestyle-Legacy-Floor-Plan-1.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "16e4f1ee39e4df8f7f44513801b1a57d9d5097b5d63b5de55d518755bac64cac",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-lifestyle-legacy/33fd352c24e9e026.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Lifestyle-Legacy-Floor-Plan-1.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "33fd352c24e9e026d2f958573f9fc0e8e0cdb417facc30678429e65f4e726e5c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-lifestyle-legacy/a2b55c9cd52149a2.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Lifestyle-Legacy-Floor-Plan-1.pdf",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "a2b55c9cd52149a298eac35fa2ad87e4d678169cfa0161a735328f7069714073",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-victoria-park-row-houses": {
     "name": "SOBHA VICTORIA PARK \u2013 ROW HOUSES",
@@ -1176,10 +1311,11 @@
   },
   "sobha-sobha-clovelly": {
     "name": "SOBHA CLOVELLY",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.sobhaoneworldwhitefield.in/bangalore/sobha-clovelly.html"
+      "https://www.sobha.com/bengaluru/sobha-clovelly",
+      "https://www.sobha.com/bengaluru/sobha-clovelly/"
     ],
     "searchAttempts": [
       {
@@ -1193,15 +1329,36 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-clovelly/86bfd553571446e1.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Clovelly-Floor-Plan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "86bfd553571446e15db029987b6edfb1aa1c6f939660f68ff49be2f199393d6e",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-clovelly/3e3547240638e995.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Clovelly-Floor-Plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "3e3547240638e995799e1fb6db9d42c51910754233609b1d7b0126bf6b4c3d2e",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-rajvilas": {
     "name": "SOBHA RAJVILAS",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.sobha.com/bengaluru/sobha-rajvilas/"
+      "https://www.sobha.com/bengaluru/sobha-rajvilas/",
+      "https://www.sobha.com/bengaluru/sobha-rajvilas",
+      "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Rajvilas-Floor-Plan.pdf"
     ],
     "searchAttempts": [
       {
@@ -1219,15 +1376,53 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-rajvilas/6f584ed6cefe639c.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Rajvilas-Floor-Plan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "6f584ed6cefe639c168999db244155fbdaf98dadb26037a80d9f6ab2dbd65de7",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-rajvilas/41ea073245e2d52c.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Rajvilas-Floor-Plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "41ea073245e2d52ca49e0dbe28a5747c32e6b57b486a370edb7b839bf66ac77b",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-rajvilas/f379e5268c090c15.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Rajvilas-Floor-Plan.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "f379e5268c090c1588c5b9c99ffdc65c74ad40927f3d9bbd1084e67c26bbccbb",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-rajvilas/83b980c8e15c95e2.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-Rajvilas-Floor-Plan.pdf",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "83b980c8e15c95e260febf4fa7fce42345c4c0ab5d3b57ca58a6d17a308d9cf7",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-25-richmond": {
     "name": "SOBHA 25 RICHMOND",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.sobha.com/bengaluru/sobha-25-richmond"
+      "https://www.sobha.com/bengaluru/sobha-25-richmond/",
+      "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-25-Richmond-Floor-plan.pdf"
     ],
     "searchAttempts": [
       {
@@ -1246,8 +1441,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-25-richmond/41866a867589f25c.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-25-Richmond-Floor-plan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "41866a867589f25c6cd8036e4ad141e564b933cbef097893c64b3ee6ef5a5bed",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-25-richmond/90725245e8025f75.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-25-Richmond-Floor-plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "90725245e8025f75f568a169f24121c915fd30679fcc18b5bb795605d3d587f2",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-25-richmond/b86d0abe41020198.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-25-Richmond-Floor-plan.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "b86d0abe410201986dd7a76d64a821800c6b06775c34950bb4330177674c3f1b",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-25-richmond/225458182cf09823.webp",
+        "originUrl": "https://www.sobha.com/wp-content/uploads/2020/09/Sobha-25-Richmond-Floor-plan.pdf",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "225458182cf09823a3e34777e0d86c19dd800f6f7c5b05452753b5e1a3988a44",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-avenue-apartments": {
     "name": "SOBHA AVENUE APARTMENTS",
@@ -1337,11 +1569,9 @@
   },
   "sobha-sobha-marvella": {
     "name": "SOBHA MARVELLA",
-    "checkedOn": "2026-11-14",
-    "status": "request",
-    "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/sobha-marvella/1577/project"
-    ],
+    "checkedOn": "2026-11-15",
+    "status": "available",
+    "researchPages": [],
     "searchAttempts": [
       {
         "url": "https://housing.com/in/buy/projects/page/953-sobha-marvella-by-sobha-limited-in-bellandur/floor-plan",
@@ -1353,8 +1583,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-marvella/749a97aa1d9bc2b3.jpg",
+        "originUrl": "https://mediacdn.99acres.com/media1/6197/4/123944495O-1575940260989.pdf",
+        "sourcePage": 9,
+        "sourceImage": 61,
+        "fileSha256": "749a97aa1d9bc2b3795b3a09089041a06842fb6b234c28bb6b2e49596097d7a6",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-marvella/90a383f0ebf6f1a8.jpg",
+        "originUrl": "https://mediacdn.99acres.com/media1/6197/4/123944495O-1575940260989.pdf",
+        "sourcePage": 10,
+        "sourceImage": 68,
+        "fileSha256": "90a383f0ebf6f1a8e95489c28e29968739c2744031591647fb48316975b5c1fe",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-marvella/bd73d1c0fa81fec8.jpg",
+        "originUrl": "https://mediacdn.99acres.com/media1/6197/4/123944495O-1575940260989.pdf",
+        "sourcePage": 10,
+        "sourceImage": 72,
+        "fileSha256": "bd73d1c0fa81fec85985db57bfc62e8e56b92a543cecd08553161cd011fdf0ba",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-marvella/3a5c1626443892a8.jpg",
+        "originUrl": "https://mediacdn.99acres.com/media1/6197/4/123944495O-1575940260989.pdf",
+        "sourcePage": 11,
+        "sourceImage": 79,
+        "fileSha256": "3a5c1626443892a8e8c63761efc56122da494591f03ea37efbb6c2ee67976b09",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-habitech": {
     "name": "SOBHA HABITECH",
@@ -2094,11 +2361,9 @@
   },
   "sobha-sobha-dewflower": {
     "name": "SOBHA DEWFLOWER",
-    "checkedOn": "2026-11-14",
-    "status": "request",
-    "researchPages": [
-      "https://www.sobha.com/city/bengaluru/"
-    ],
+    "checkedOn": "2026-11-15",
+    "status": "available",
+    "researchPages": [],
     "searchAttempts": [
       {
         "url": "https://www.scribd.com/document/239889947/Sobha-Dewflower-Brochure",
@@ -2111,8 +2376,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/sobha-sobha-dewflower/e43ae6486bc16528.webp",
+        "originUrl": "https://img.staticmb.com/mbimages/project/1389429214005dewflower-e-brochure_1.pdf",
+        "sourcePage": 24,
+        "sourceImage": null,
+        "fileSha256": "e43ae6486bc16528ea8cdc5262320c80ec1c39e418ecba4322f282235a146569",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-dewflower/8e95257a1850b336.webp",
+        "originUrl": "https://img.staticmb.com/mbimages/project/1389429214005dewflower-e-brochure_1.pdf",
+        "sourcePage": 25,
+        "sourceImage": null,
+        "fileSha256": "8e95257a1850b3360a8875e5e4505bf6c6e838979ffc72aa4f77a2ba12102472",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-dewflower/bf645985863f3abd.webp",
+        "originUrl": "https://img.staticmb.com/mbimages/project/1389429214005dewflower-e-brochure_1.pdf",
+        "sourcePage": 26,
+        "sourceImage": null,
+        "fileSha256": "bf645985863f3abdfe716e163f49ad5ddde4d4e90c1189b94375f71b3ad5c36f",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/sobha-sobha-dewflower/6e2f36cd7721ea28.webp",
+        "originUrl": "https://img.staticmb.com/mbimages/project/1389429214005dewflower-e-brochure_1.pdf",
+        "sourcePage": 27,
+        "sourceImage": null,
+        "fileSha256": "6e2f36cd7721ea28d3d04f2e768f6f9a4786a05da66caec7c714425e525f31ab",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "sobha-sobha-forest-edge": {
     "name": "SOBHA FOREST EDGE",
@@ -2447,10 +2749,14 @@
   },
   "assetz-the-secret-lake": {
     "name": "The Secret Lake",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.assetzproperty.com/secretlake/files/TSL%20E_Brochure.pdf"
+      "https://www.assetzproperty.com/secretlake/",
+      "https://www.assetzproperty.com/biz/TheSecretLake/",
+      "https://www.assetzproperty.com/secretlake/files/TSL%20E_Brochure.pdf",
+      "https://www.assetzproperty.com/secretlake",
+      "https://www.assetzproperty.com/secretlake/files/TSL E_Brochure.pdf"
     ],
     "searchAttempts": [
       {
@@ -2469,8 +2775,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-the-secret-lake/003e933280583b58.webp",
+        "originUrl": "https://www.assetzproperty.com/secretlake/files/TSL%20E_Brochure.pdf",
+        "sourcePage": 6,
+        "sourceImage": null,
+        "fileSha256": "003e933280583b581dfe8e3ed5d561eae9a466c78308b68f18f9df6a352f892f",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-trees-tandem": {
     "name": "Trees & Tandem",
@@ -2625,10 +2941,12 @@
   },
   "assetz-66-shibui": {
     "name": "66 & Shibui",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://media.getrightproperty.com/residential-projects/bengaluru/456/assetz-66-and-shibui-whitefield-brochure.pdf"
+      "https://www.assetzproperty.com/66andshibui/wp-content/uploads/2024/04/66-Shibui-Digital-Brochure.pdf",
+      "https://www.assetzproperty.com/biz/66-and-shibui/",
+      "https://www.assetzproperty.com/66andshibui/wp-content/uploads/2024/02/66-Shibui-Digital-Brochure.pdf"
     ],
     "searchAttempts": [
       {
@@ -2637,15 +2955,27 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-66-shibui/8b21b2462acd5127.webp",
+        "originUrl": "https://www.assetzproperty.com/66andshibui/wp-content/uploads/2024/04/66-Shibui-Digital-Brochure.pdf",
+        "sourcePage": 17,
+        "sourceImage": null,
+        "fileSha256": "8b21b2462acd51278b894d4ca99b5aadf1b4102c2492477eb208ed5b884cfa65",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-promise-of-spring": {
     "name": "Promise of Spring",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://doc.squareyards.com/ProjectKnowledge/246863-assetz-promise-of-spring-main-brochure-6145.pdf"
+      "https://www.assetzproperty.com/promiseofspring/",
+      "https://www.assetzproperty.com/promiseofspring/location",
+      "https://www.assetzproperty.com/biz/Promise-of-Spring/"
     ],
     "searchAttempts": [
       {
@@ -2664,8 +2994,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-promise-of-spring/10de685f3b72dd49.webp",
+        "originUrl": "https://www.assetzproperty.com/promiseofspring/assets/images/structure.webp",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "10de685f3b72dd49b62c22a1635c268b4a9594dfdf60203936a2f6c12bc753fb",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-canvas-cove": {
     "name": "Canvas & Cove",
@@ -2729,10 +3069,16 @@
   },
   "assetz-18-oak": {
     "name": "18 & Oak",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.assetzproperty.com/18andoak/brochure/18%26Oak-E-Brochure_PHASE-2.pdf"
+      "https://www.assetzproperty.com/18andoak/masterplan",
+      "https://www.assetzproperty.com/18andoak/gallery",
+      "https://www.assetzproperty.com/18andoak/villa",
+      "https://www.assetzproperty.com/biz/18andoak/",
+      "https://www.assetzproperty.com/18andoak/brochure/18%26Oak-E-Brochure_PHASE-2.pdf",
+      "https://www.assetzproperty.com/18andoak/",
+      "https://www.assetzproperty.com/18andoak/contact-us"
     ],
     "searchAttempts": [
       {
@@ -2751,8 +3097,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-18-oak/a79442b2923f026b.jpg",
+        "originUrl": "https://www.assetzproperty.com/18andoak/assets/images/masterplan/master_pan.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "a79442b2923f026ba299c34979f0f3865cacfe48a9b3501ad990794ac19259ad",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-atmos-aura": {
     "name": "Atmos & Aura",
@@ -2887,32 +3243,112 @@
   },
   "assetz-marq-2a-and-2b": {
     "name": "Marq 2A and 2B",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
       "https://www.assetzproperty.com/marq/"
     ],
     "searchAttempts": [],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-marq-2a-and-2b/972e5c3410d32dd1.jpg",
+        "originUrl": "https://www.assetzproperty.com/marq/wp-content/uploads/2022/02/Marq_3BHK-08.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "972e5c3410d32dd14998c08030dc64a3262097b630fded1ed348f3229c6d835c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": "Developer-published Tower 6 and Tower 7 layouts; confirm exact phase and unit before purchase."
+      },
+      {
+        "asset": "/images/floorplans/assetz-marq-2a-and-2b/8a9a0cc8546dd98c.jpg",
+        "originUrl": "https://www.assetzproperty.com/marq/wp-content/uploads/2022/02/Marq_3BHK-09.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "8a9a0cc8546dd98cad876e45e742d6845ab38a36af8a20c1fb7d359c4fc969bf",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": "Developer-published Tower 6 and Tower 7 layouts; confirm exact phase and unit before purchase."
+      },
+      {
+        "asset": "/images/floorplans/assetz-marq-2a-and-2b/336071a16a20e57d.jpg",
+        "originUrl": "https://www.assetzproperty.com/marq/wp-content/uploads/2022/02/Marq_3BHK-10.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "336071a16a20e57daf8b4c8f3bf1436e118b9c6d270d1b3deafecdfeeb8c3069",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": "Developer-published Tower 6 and Tower 7 layouts; confirm exact phase and unit before purchase."
+      },
+      {
+        "asset": "/images/floorplans/assetz-marq-2a-and-2b/81b029c7604fc727.jpg",
+        "originUrl": "https://www.assetzproperty.com/marq/wp-content/uploads/2022/02/Marq_4BHK-.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "81b029c7604fc727a6a35b6ba985aedb0cefa08219e67a4fb56b88e8570ba7cf",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": "Developer-published Tower 6 and Tower 7 layouts; confirm exact phase and unit before purchase."
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-leaves-lives-phase-1": {
     "name": "Leaves & Lives Phase 1",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
       "https://www.assetzproperty.com/leavesandlives/"
     ],
     "searchAttempts": [],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-leaves-lives-phase-1/34ac97af1dadf747.webp",
+        "originUrl": "https://www.assetzproperty.com/leavesandlives/brochure/Leaves-Lives-E-Brochure.pdf",
+        "sourcePage": 9,
+        "sourceImage": null,
+        "fileSha256": "34ac97af1dadf747bb3646aa0d07e591cfe4e23003512f1f27c525cb931cd1e1",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/assetz-leaves-lives-phase-1/f175872972bc2f48.webp",
+        "originUrl": "https://www.assetzproperty.com/leavesandlives/brochure/Leaves-Lives-E-Brochure.pdf",
+        "sourcePage": 7,
+        "sourceImage": null,
+        "fileSha256": "f175872972bc2f48c24901b54043d4c962b60b02cff262ab91a0db843b257e1c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/assetz-leaves-lives-phase-1/a749a93c97da196c.webp",
+        "originUrl": "https://www.assetzproperty.com/leavesandlives/brochure/Leaves-Lives-E-Brochure.pdf",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "a749a93c97da196c4642fb111bdfb455662280dc69e380aec2dfc33eb6826b90",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/assetz-leaves-lives-phase-1/dbb8ae6ee94a845c.webp",
+        "originUrl": "https://www.assetzproperty.com/leavesandlives/brochure/Leaves-Lives-E-Brochure.pdf",
+        "sourcePage": 15,
+        "sourceImage": null,
+        "fileSha256": "dbb8ae6ee94a845c193b15034321bceff885475a09d7d0bed67770d7c79e171c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-38-banyan": {
     "name": "38 & Banyan",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.assetzproperty.com/38andbanyan/brochure/brochure.pdf"
+      "https://www.assetzproperty.com/38andbanyan/details.php",
+      "https://www.assetzproperty.com/38andbanyan/",
+      "https://www.assetzproperty.com/38andbanyan/amenities.php",
+      "https://www.assetzproperty.com/38andbanyan/brochure/brochure.pdf",
+      "https://www.assetzproperty.com/38andbanyan/gallery.php",
+      "https://www.assetzproperty.com/38andbanyan/location.php",
+      "https://www.assetzproperty.com/38andbanyan/contact.php"
     ],
     "searchAttempts": [
       {
@@ -2921,8 +3357,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-38-banyan/77e38f1f17596e5b.png",
+        "originUrl": "https://www.assetzproperty.com/38andbanyan/brochure/brochure.pdf",
+        "sourcePage": 13,
+        "sourceImage": 215,
+        "fileSha256": "77e38f1f17596e5ba5ec627a71f603afc6007e9e4f27f5cfbd38358fa00195fb",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-here-now": {
     "name": "Here & Now",
@@ -3030,10 +3476,13 @@
   },
   "assetz-lumos": {
     "name": "Lumos",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.homznspace.com/assetz-lumos/"
+      "https://www.assetzproperty.com/lumos/assets/pdf/01lumos-brochure.pdf",
+      "https://www.assetzproperty.com/stratos/pdf/stratos_brochure.pdf",
+      "https://www.assetzproperty.com/lumos/blog.html",
+      "https://www.assetzproperty.com/lumos/"
     ],
     "searchAttempts": [
       {
@@ -3051,8 +3500,18 @@
         "error": "406 Client Error: Not Acceptable for url: https://housing.com/in/buy/projects/page/2759-assetz-lumos-by-assetz-property-group-in-mahalakshmi-layout"
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/assetz-lumos/7e1f858d5203ef1b.jpg",
+        "originUrl": "https://www.assetzproperty.com/lumos/assets/pdf/01lumos-brochure.pdf",
+        "sourcePage": 16,
+        "sourceImage": 91,
+        "fileSha256": "7e1f858d5203ef1b74d43e79b0828034f4ada0152f1e74d11cd0889f0e0b3e53",
+        "extraction": "Unmodified embedded original image",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "assetz-63-degree-east": {
     "name": "63 Degree East",
@@ -3538,10 +3997,13 @@
   },
   "puravankara-northern-waves": {
     "name": "Northern Waves",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://view.publitas.com/35621/272625/pdfs/3d1b19b55a6ac687ab16c0e2cb3496ea27854745.pdf?response-content-disposition=attachment%3B+filename%2A%3DUTF-8%27%27Addressofchoice.com%2520-%2520Purva%2520Northern%2520Waves%2520Bangalore.pdf"
+      "https://www.puravankara.com/campaigns/northern-waves/",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/1f2911aba942fa1558dfe84c20b02f4c.pdf",
+      "https://bc.puravankara.com/completed-projects/Northern_waves",
+      "https://www.puravankara.com/campaigns/promenade/palm-beach-brochure.pdf"
     ],
     "searchAttempts": [
       {
@@ -3550,8 +4012,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-northern-waves/85684f5ec1e3fd02.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/northern-waves/img/portfolio/image-17.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "85684f5ec1e3fd02c0e8d9a8dab803276ffe787ef63b6b864fa03084edbc417f",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-seasons": {
     "name": "Purva Seasons",
@@ -3723,10 +4195,16 @@
   },
   "puravankara-purva-skydale": {
     "name": "Purva Skydale",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.puravankara.com/backend/assets/uploads/projects/construction_images/a5dfe95ffa361668bb7ff01f64390d49.pdf"
+      "https://www.puravankara.com/campaigns/skydale/",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/a9e154c9d6e6d810d8751c048705d153.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/4b296dddd5eaf97b6fdd09d55c3352b8.pdf",
+      "https://bc.puravankara.com/completed-projects/purva-skydale",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/9fe78954916e5d2e9781475fa6da25c2.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/construction_images/a5dfe95ffa361668bb7ff01f64390d49.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/7d8415a5e13b6816349b464566f8abc7.pdf"
     ],
     "searchAttempts": [
       {
@@ -3745,8 +4223,36 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-skydale/273029e81457a3d6.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/skydale/img/portfolio/image-8.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "273029e81457a3d68678974ef7d0fb340496abb1a37e44fcd7b7dacd2277540c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-skydale/1e47c5da866856b5.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/skydale/img/portfolio/image-9.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "1e47c5da866856b552f7e5079f3aa6a374c4e72ed881c9f179bb272d4e31b770",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-skydale/a8600d5036e85119.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/skydale/img/portfolio/image-10.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "a8600d5036e851191471cace24203bbc8549e0e770bccdfa1a74bedab43f4b4a",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-promenade": {
     "name": "Purva Promenade",
@@ -3767,10 +4273,16 @@
   },
   "puravankara-purva-whitehall": {
     "name": "Purva Whitehall",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/puravankara-purva-whitehall/1614/project"
+      "https://www.puravankara.com/campaigns/whitehall/index.php",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/c720d9af98dd0aab1da25fd9dfbfc21d.pdf",
+      "https://bc.puravankara.com/completed-projects/purva-whitehall",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/a9e154c9d6e6d810d8751c048705d153.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/bc7c15a97c218aa1f504bec89222df8c.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/4b296dddd5eaf97b6fdd09d55c3352b8.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/9dc5d4f34752264ba3f106412d3e07d0.pdf"
     ],
     "searchAttempts": [
       {
@@ -3779,15 +4291,58 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-whitehall/a0a4981c54e6edb6.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/whitehall/img/portfolio/floorplan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "a0a4981c54e6edb6b856d56af77d93753438d0511fd24d32258147ea28abac21",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-whitehall/75559a6d4af6d9f2.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/whitehall/img/portfolio/floorplan2.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "75559a6d4af6d9f2d4058f3b61dae85947fabfe8482968572cab86b298912af4",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-whitehall/3fa9e1a60a3673de.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/whitehall/img/portfolio/floorplan3.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "3fa9e1a60a3673de59b61ba41e038b346ba3fb7f381a6689ca40954a24e35a10",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-whitehall/f17d20d101da0f79.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/whitehall/img/portfolio/floorplan4.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "f17d20d101da0f79baf37092991674f6dcb30e8447394bb5d87a944a34b6972f",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-coronation-square": {
     "name": "Coronation Square",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.puravankara.com/campaigns/coronation-square/index.php"
+      "https://www.puravankara.com/campaigns/coronation-square/index.php",
+      "https://www.puravankara.com/campaigns/coronation-square/",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/e5fa359cb13ab8fe755cf39eb2a6013d.pdf",
+      "https://backend.puravankara.com/uploads/cd8beb775d61ae254b66ff829eca6cf5_97f5eac4fd.pdf",
+      "https://bc.puravankara.com/completed-projects/coronation-square",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/4b296dddd5eaf97b6fdd09d55c3352b8.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/a9e154c9d6e6d810d8751c048705d153.pdf"
     ],
     "searchAttempts": [
       {
@@ -3800,15 +4355,28 @@
         "error": "406 Client Error: Not Acceptable for url: https://housing.com/in/buy/projects/page/43438-puravankara-coronation-square-apartment-by-puravankara-limited-in-jp-nagar"
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-coronation-square/8308a6a65f770b87.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/coronation-square/img/gallery/floorplan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "8308a6a65f770b8749594ecea4674777a8b7692340b38cb20a617e631704055b",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-venezia": {
     "name": "Purva Venezia",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/puravankara-purva-venezia/1423/project"
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/9fe78954916e5d2e9781475fa6da25c2.pdf",
+      "https://backend.puravankara.com/uploads/1117f5ee60718fce128877b11564e0b5_90c5b6f730.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/4b296dddd5eaf97b6fdd09d55c3352b8.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/367839ce659c81267494ad9e6ba2f07c.pdf"
     ],
     "searchAttempts": [
       {
@@ -3817,8 +4385,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-venezia/8223cc61efc3dba8.webp",
+        "originUrl": "https://d1uczv4l7tlcpy.cloudfront.net/admin/public/images/brochure/1605249933.pdf",
+        "sourcePage": 6,
+        "sourceImage": null,
+        "fileSha256": "8223cc61efc3dba8eb74cbcd40d2d15347c1867c5a711e812aff9156341a4564",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-the-sound-of-water": {
     "name": "The Sound of Water",
@@ -3893,10 +4471,16 @@
   },
   "puravankara-purva-atria-platina": {
     "name": "Purva Atria Platina",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/puravankara-purva-atria-platina/1599/project"
+      "https://www.bc.puravankara.com/completed-projects/purva-atria-platina",
+      "https://backend.puravankara.com/uploads/2e8cfa58f6719011a192d51c500aaa46_aa9ac09c45.pdf",
+      "https://www.puravankara.com/residential/bengaluru/purva-atria-platina",
+      "https://backend.puravankara.com/uploads/f160793f96273c2b6d1881519254de10_526fb5e471.pdf",
+      "https://backend.puravankara.com/uploads/b33049d33bdac8f6c979697fbc390f6c_6446785294.pdf",
+      "https://backend.puravankara.com/uploads/33996e58f366e2c5451b4695d0aa198d_de9c361401.pdf",
+      "https://backend.puravankara.com/uploads/1b4aa713455cc5cc36f91b9c36df3c59_1_0ccdfc6fef.pdf"
     ],
     "searchAttempts": [
       {
@@ -3910,8 +4494,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-atria-platina/8fdc66ec3e65e86f.jpg",
+        "originUrl": "https://www.bc.puravankara.com/backend/assets/uploads/projects/floor_plan/f88af0802d73e7b72ca917a2fa599b2e.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "8fdc66ec3e65e86f443deb0a06e482904c4dac544078649a32be8cb8d2f42d05",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-skywood": {
     "name": "Purva Skywood",
@@ -3984,10 +4578,16 @@
   },
   "puravankara-purva-palm-beach": {
     "name": "Purva Palm Beach",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://backend.puravankara.com/uploads/cd8beb775d61ae254b66ff829eca6cf5_97f5eac4fd.pdf"
+      "https://www.puravankara.com/backend/assets/uploads/projects/brochure/1f2911aba942fa1558dfe84c20b02f4c.pdf",
+      "https://bc.puravankara.com/completed-projects/purva-palm-beach",
+      "https://www.puravankara.com/campaigns/palm-beach/",
+      "https://nb.puravankara.com/palm-beach/",
+      "https://backend.puravankara.com/uploads/cd8beb775d61ae254b66ff829eca6cf5_97f5eac4fd.pdf",
+      "https://nb.puravankara.com/palm-beach/index.php",
+      "https://backend.puravankara.com/uploads/1fbcb41d2c9f7fa5d07b9b8baed6ee4f_878f6bd68e.pdf"
     ],
     "searchAttempts": [
       {
@@ -4006,15 +4606,39 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-palm-beach/459a9b37394f1bb4.jpg",
+        "originUrl": "https://bc.puravankara.com/backend/assets/uploads/projects/floor_plan/704707b40dfaa91c0e25fcac371046f3.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "459a9b37394f1bb452b76cca96e986924add69bf68a36687b8d6f8832433a759",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-palm-beach/3d730e32dbaaf9cb.jpg",
+        "originUrl": "https://bc.puravankara.com/backend/assets/uploads/projects/floor_plan/63372aa0621b3580d0f6850ba412ffbb.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "3d730e32dbaaf9cbf522b4715fca22747e606c8cef3b75b13c8c818bde83a60c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-smiling-willows": {
     "name": "Purva Smiling Willows",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://nb.puravankara.com/smilingwillows/psw-brochure.pdf"
+      "https://nb.puravankara.com/smilingwillows/",
+      "https://nb.puravankara.com/smilingwillows/psw-brochure.pdf",
+      "https://backend.puravankara.com/uploads/615108bb6a68302f0877c839f690984d_3f3fc99c78.pdf",
+      "https://bc.puravankara.com/completed-projects/purva-smiling-willows",
+      "https://backend.puravankara.com/uploads/a6d18bfa1f8444d21d0ab57143d390e2_120f1e7974.pdf",
+      "https://backend.puravankara.com/uploads/cd8beb775d61ae254b66ff829eca6cf5_97f5eac4fd.pdf"
     ],
     "searchAttempts": [
       {
@@ -4023,15 +4647,28 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-smiling-willows/750bfdd6be23e55a.jpg",
+        "originUrl": "https://nb.puravankara.com/smilingwillows/images/typical-unit-plan-a-ground-floor.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "750bfdd6be23e55a375be43118b2e767dda5434a64b081431979f78b505415e9",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-tiara": {
     "name": "Purva Tiara",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/purva-tiara/239634/project"
+      "https://www.puravankara.com/campaigns/purva-tiara/",
+      "https://www.puravankara.com/campaigns/purva-tiara/index.php",
+      "https://www.puravankara.com/residential/bengaluru/purva-tiara",
+      "https://backend.puravankara.com/uploads/cd8beb775d61ae254b66ff829eca6cf5_97f5eac4fd.pdf"
     ],
     "searchAttempts": [
       {
@@ -4048,8 +4685,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-tiara/f86be66f4c34f41a.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/purva-tiara/img/portfolio/unitplan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "f86be66f4c34f41af1e120bf5e7c25ce12d23fb952083fc3ac80654ff7c99165",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-tiara/077db226dd4b6aa3.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/purva-tiara/img/portfolio/floorplan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "077db226dd4b6aa3eefd9ec2b33192fefb374f14d779241dda6a70f464de87d5",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-tiara/f33fb13d3dbaada2.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/purva-tiara/img/portfolio/floorplan4.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "f33fb13d3dbaada232fb3cc5b2ec4fdae7ff0a1d6f8ecf1071eac55d30816f04",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/puravankara-purva-tiara/e4e10a3316444d1d.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/purva-tiara/img/portfolio/unitplan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "e4e10a3316444d1d5c8311a02aa28ae7e0197410d2feb2f02439184f7a89b719",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-parkhill": {
     "name": "Purva Parkhill",
@@ -4240,10 +4914,15 @@
   },
   "puravankara-purva-zentech": {
     "name": "Purva Zentech",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.puravankara.com/commercial/bengaluru/purva-zentech"
+      "https://www.puravankara.com/commercial/bengaluru/purva-zentech",
+      "https://backend.puravankara.com/uploads/Press_Release_17_11_2025_1_5e27ee9f3c.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/construction_images/Purva%20Zentech-June25.pdf",
+      "https://backend.puravankara.com/uploads/AMORE_Summer_Issue_2024_2835f677ba.pdf",
+      "https://www.puravankara.com/backend/assets/uploads/projects/construction_images/Purva%20Zentech-Apr25.pdf",
+      "https://www.puravankara.com/real-estate-blog/office-space-options-at-purva-zentech"
     ],
     "searchAttempts": [
       {
@@ -4260,15 +4939,31 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-zentech/32a0c1bd3d6d2c65.jpg",
+        "originUrl": "https://www.puravankara.com/uploads/Zentech_6th_floor_plan_0915b97b12.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "32a0c1bd3d6d2c65aceced48e4d4d02a6edf2ba44c1c194f80cf2bdbcd8e2f6e",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "puravankara-purva-gainz": {
     "name": "Purva Gainz",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.puravankara.com/campaigns/commercial/"
+      "https://www.puravankara.com/campaigns/purvagainz/index.php",
+      "https://www.puravankara.com/commercial/bengaluru/purva-gainz",
+      "https://www.bc.puravankara.com/projects/purva-gainz",
+      "https://backend.puravankara.com/uploads/615108bb6a68302f0877c839f690984d_3f3fc99c78.pdf",
+      "https://backend.puravankara.com/uploads/0c0060f02e929347fb660c9fbf5a64b2_0b5705279c.pdf",
+      "https://backend.puravankara.com/uploads/69fa4ac5db9e06be052f69ef5dbae160_a8c9cded0e.pdf",
+      "https://backend.puravankara.com/uploads/1117f5ee60718fce128877b11564e0b5_90c5b6f730.pdf"
     ],
     "searchAttempts": [
       {
@@ -4282,8 +4977,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/puravankara-purva-gainz/04ef094f4bb0166c.jpg",
+        "originUrl": "https://www.puravankara.com/campaigns/purvagainz/img/portfolio/flr-plan1.jpg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "04ef094f4bb0166cbd7c4f0384b4747999e74d75274b8266655704e79d9b31f7",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "provident-housing-provident-botanico": {
     "name": "Provident Botanico",
@@ -4533,10 +5238,16 @@
   },
   "provident-housing-provident-capella": {
     "name": "Provident Capella",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.providenthousing.com/uploads/capella-floor-plan-brochure-OLD.pdf"
+      "https://www.providenthousing.com/wp-content/uploads/2022/12/Provident_Capella_Brochure_New.pdf",
+      "https://www.providenthousing.com/campaigns/gads/provident-capella-apartments-whitefield/",
+      "https://www.providenthousing.com/campaigns/ls/provident-capella-apartments-whitefield/",
+      "https://www.providenthousing.com/providentcapella/",
+      "https://www.providenthousing.com/campaigns/providentcapella/",
+      "https://www.providenthousing.com/3-bhk-flats-in-whitefield/",
+      "https://www.providenthousing.com/projects/bangalore/provident-capella-whitefield/"
     ],
     "searchAttempts": [
       {
@@ -4555,14 +5266,29 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/provident-housing-provident-capella/f5bc458dbd126531.jpg",
+        "originUrl": "https://www.providenthousing.com/campaigns/gads/provident-capella-apartments-whitefield/Capella_Unit-Plan-3-BHK.jpeg",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "f5bc458dbd1265313470152e171803ac8556183e2f5e585003d1ec6efd3d5b4a",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "provident-housing-provident-toogoodhomes": {
     "name": "Provident #TooGoodHomes",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
+      "https://www.providenthousing.com/2-bhk-apartments-in-bangalore/",
+      "https://www.providenthousing.com/wp-content/uploads/2022/12/TooGoodHomes-Feb23-1.pdf",
+      "https://www.providenthousing.com/wp-content/uploads/2022/12/PHL-ESG-Report.pdf",
+      "https://www.providenthousing.com/uploads/TooGoodHomes-Jun22.pdf",
+      "https://www.providenthousing.com/wp-content/uploads/2023/11/Provident-Housing-Limited_Final.pdf",
       "https://www.providenthousing.com/projects/bangalore/toogoodhomes/"
     ],
     "searchAttempts": [
@@ -4581,8 +5307,18 @@
         "error": "406 Client Error: Not Acceptable for url: https://housing.com/in/buy/projects/page/122805-provident-too-good-homes-by-provident-housing-limited-in-sampigehalli"
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/provident-housing-provident-toogoodhomes/6ebb651468eebebf.webp",
+        "originUrl": "https://www.providenthousing.com/wp-content/uploads/2022/12/typical-unit-plan-2-BHK-Comfort-tgh.webp",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "6ebb651468eebebf62d6bf3646ada8007dee59c403dbaaabad5c4fc527f427f4",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "provident-housing-provident-welworth-city": {
     "name": "Provident Welworth city",
@@ -4757,10 +5493,12 @@
   },
   "lodha-lodha-elanza": {
     "name": "Lodha Elanza",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.lodhagroup.com/projects/residential-property-in-bangalore/lodha-elanza-sarjapur-road"
+      "https://www.lodhagroup.com/projects/residential-property-in-bangalore/lodha-elanza-sarjapur-road",
+      "https://dev-beta.lodhagroup.com/projects/residential-property-in-bangalore/lodha-elanza-sarjapur-road",
+      "https://www.lodhagroup.com/projects/residential-property-in-bangalore/lodha-elanza-sarjapur-road/location"
     ],
     "searchAttempts": [
       {
@@ -4769,8 +5507,27 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/lodha-lodha-elanza/976f404662e1abf1.webp",
+        "originUrl": "https://www.lodhagroup.com/sites/default/files/styles/webp/public/2026-01/2533154697_Lodha%20Elanza_3%20Bed%20Residence_2000x1111%20%281%29.jpg.webp?itok=aXKx1SR5",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "976f404662e1abf11f3ae1675d9d68140ad0ca770a68e62b04705f163f2069a1",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/lodha-lodha-elanza/d3b6f6ecf2b167e9.webp",
+        "originUrl": "https://www.lodhagroup.com/sites/default/files/styles/webp/public/2026-01/2533154697_Lodha%20Elanza_3%20Bed%20_%20Study_2000x1111%20%281%29.jpg.webp?itok=7gxL_4NH",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "d3b6f6ecf2b167e98108c0a5bf2452fdd7523e2d68a8e9d1c84c9e29625b1a84",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "lodha-lodha-azur": {
     "name": "Lodha Azur",
@@ -4853,10 +5610,12 @@
   },
   "lodha-lodha-mirabelle": {
     "name": "Lodha Mirabelle",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://view.publitas.com/59983/1728511/pdfs/7f633c3f-5428-4f40-b6cc-f1f138b80e2b.pdf?response-content-disposition=attachment%3B+filename%2A%3DUTF-8%27%27My%2520publications%2520-%2520www-lodhamirabelle-net-in.pdf"
+      "https://www.lodhagroup.com/projects/residential-property-in-bangalore/lodha-mirabelle",
+      "https://www.lodhagroup.com/sites/default/files/2024-05/Placement-Document-2024-v2.pdf",
+      "https://www.lodhagroup.com/sites/default/files/2024-08/Lodha-AGM-FY24-v7.pdf"
     ],
     "searchAttempts": [
       {
@@ -4865,8 +5624,27 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/lodha-lodha-mirabelle/f46b03957acdce81.webp",
+        "originUrl": "https://www.lodhagroup.com/sites/default/files/styles/webp/public/2025-07/3-bed-with-study_Lodha-Mirabelle.jpg.webp?itok=6daH2XSB",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "f46b03957acdce8103ee980c9037587788486a447a6ad5285d5f6bc22a65976b",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/lodha-lodha-mirabelle/450caa50440f6da0.webp",
+        "originUrl": "https://www.lodhagroup.com/sites/default/files/styles/webp/public/2025-07/4_bed_%28Tower_4%29_Lodha_Mirabelle.jpg.webp?itok=Z48ZTOUI",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "450caa50440f6da0144b29aba65a058b1aa6a32a48e23414df5bfbb5c319300f",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-woodscapes": {
     "name": "Godrej Woodscapes",
@@ -4914,10 +5692,16 @@
   },
   "godrej-properties-godrej-lakeside-orchard": {
     "name": "Godrej Lakeside Orchard",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/MLP.pdf"
+      "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/Floor_Plan.pdf",
+      "https://www.godrejproperties.com/about/bangalore/residential/godrej-lakeside-orchard/",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-lakeside-orchard-2-amp/landingpage/",
+      "https://www.godrejproperties.com/bengaluru/residential/godrej-lakeside-orchard",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-lakeside-orchard-sarjapur/landingpage",
+      "https://www.godrejproperties.com/landing-page/bangalore/residential/godrej-lakeside-orchard/",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-lakeside-orchard-2/landingpage"
     ],
     "searchAttempts": [
       {
@@ -4937,14 +5721,54 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/b295a8772c04382f.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/Floor_Plan.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "b295a8772c04382f97ffa1bf7594488f42858d2cf153a4f9faab1b191607fcdb",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/81effef9c74aa863.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/Floor_Plan.pdf",
+        "sourcePage": 34,
+        "sourceImage": null,
+        "fileSha256": "81effef9c74aa863b288bcebfa2359eb095377bd56aeb2349de0b084cdd2d261",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/306aacf7f9040728.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/Floor_Plan.pdf",
+        "sourcePage": 8,
+        "sourceImage": null,
+        "fileSha256": "306aacf7f90407283533c602e7fe618b91b2310e2db66eee41b61e897fab745a",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-lakeside-orchard/dd83a2c085d90dd2.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/lakeside-orchard/pdf/Floor_Plan.pdf",
+        "sourcePage": 6,
+        "sourceImage": null,
+        "fileSha256": "dd83a2c085d90dd272bc6fa7cbf0059a64bed01df8a8f1e0ac7d54b1377987ec",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-barca-at-godrej-msr-city": {
     "name": "Barca at Godrej MSR City",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
+      "https://www.godrejproperties.com/about/bangalore/residential/barca-at-godrej-msr-city/",
+      "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/MSR-City-Floor-Plan.pdf",
+      "https://www.godrejproperties.com/bengaluru/residential/barca-at-godrej-msr-city",
       "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/barca-at-godrej-msr-city-brochure.pdf"
     ],
     "searchAttempts": [
@@ -4961,8 +5785,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/35666b5012d73a84.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/MSR-City-Floor-Plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "35666b5012d73a848d6b617f299c6b1cf68be9a0dfdd537eec8f8f27be6ba1a0",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/f52db98e639b00f2.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/MSR-City-Floor-Plan.pdf",
+        "sourcePage": 15,
+        "sourceImage": null,
+        "fileSha256": "f52db98e639b00f25e073577bd56b0b763e98d9527abe5a1daba69a0579b4073",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/1878bb1ed19915d2.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/MSR-City-Floor-Plan.pdf",
+        "sourcePage": 14,
+        "sourceImage": null,
+        "fileSha256": "1878bb1ed19915d24c0f8aedeb94379956b94ecf1085caa6bfce81a6238bd4f6",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-barca-at-godrej-msr-city/25de87504a02865a.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/godrej-msr-city/pdf/MSR-City-Floor-Plan.pdf",
+        "sourcePage": 47,
+        "sourceImage": null,
+        "fileSha256": "25de87504a02865a1ef65cf3b21c1564079cfa1a1f566c41e610667cf444f3c6",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-tiara": {
     "name": "Godrej Tiara",
@@ -5348,10 +6209,16 @@
   },
   "godrej-properties-godrej-avenues": {
     "name": "Godrej Avenues",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.godrejproperties.com/index.php/bangalore_projects"
+      "https://www.godrejproperties.com/about/bangalore/residential/godrej-avenues/",
+      "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_-_Flipchart.pdf",
+      "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_Specification.pdf",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-avenues/download/delhi/residential/godrej-connaught-one/landingpage",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-avenues/landingpage",
+      "https://www.godrejproperties.com/bengaluru/residential/godrej-avenues/gallery",
+      "https://www.godrejproperties.com/index.php/bangalore/residential/godrej-avenues/overview"
     ],
     "searchAttempts": [
       {
@@ -5360,15 +6227,58 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-avenues/c7bb35ad555b8090.webp",
+        "originUrl": "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_-_Flipchart.pdf",
+        "sourcePage": 131,
+        "sourceImage": null,
+        "fileSha256": "c7bb35ad555b80902ac5d2295259d067fa7ef9f323e56ee3914c74487fb80b2d",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-avenues/c80483142ffef1ff.webp",
+        "originUrl": "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_-_Flipchart.pdf",
+        "sourcePage": 133,
+        "sourceImage": null,
+        "fileSha256": "c80483142ffef1ff1d99200c8c9e2161a65ea0ac3c9bce65c479da3f5eba12fc",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-avenues/73329f3cf8db5902.webp",
+        "originUrl": "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_-_Flipchart.pdf",
+        "sourcePage": 134,
+        "sourceImage": null,
+        "fileSha256": "73329f3cf8db590280430efc38849848c5ec2295ad8780d23b119ba9392809cf",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-avenues/0e4e3cf048c85a45.webp",
+        "originUrl": "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_avenues_bangalore/ebrochure/Godrej_Avenues_-_Flipchart.pdf",
+        "sourcePage": 132,
+        "sourceImage": null,
+        "fileSha256": "0e4e3cf048c85a4560b71fef01e0005658e11459e7587e4c3cbcefee89cf94b1",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-reserve": {
     "name": "Godrej Reserve",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.smcrealty.com/images/microsites/brochure/godrej-reserve-221.pdf"
+      "https://www.godrejproperties.com/about/bangalore/plotted/godrej-reserve/",
+      "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_reserve_bangalore/ebrochure/Godrej_Reserve_brochure.PDF",
+      "https://www.godrejproperties.com/mumbai/residential/godrej-reserve",
+      "https://www.godrejproperties.com/pdf/Godrej_Reserve_brochure.PDF",
+      "https://www.godrejproperties.com/mumbai/residential/godrej-reserve/download",
+      "https://www.godrejproperties.com/pdf/Godrej-Reserve-Brochure.pdf",
+      "https://www.godrejproperties.com/mumbai/residential/godrej-reserve/gallery"
     ],
     "searchAttempts": [
       {
@@ -5387,8 +6297,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-reserve/e34a9b66147f326d.webp",
+        "originUrl": "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_reserve_bangalore/ebrochure/Godrej_Reserve_brochure.PDF",
+        "sourcePage": 5,
+        "sourceImage": null,
+        "fileSha256": "e34a9b66147f326d88790da26a802da2006628f899ac087a1f675416f13e35f6",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-24": {
     "name": "Godrej 24",
@@ -5492,10 +6412,16 @@
   },
   "godrej-properties-godrej-united": {
     "name": "Godrej United",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.godrejproperties.com/digitalcollaterals/bangalore/united/pdf/Godrej_United_Flipchart.pdf"
+      "https://www.godrejproperties.com/about/bangalore/residential/godrej-united/",
+      "https://www.godrejproperties.com/digitalcollateral/bangalore/united/pdf/United_Floor_plan.pdf",
+      "https://www.godrejproperties.com/pdf/United_Floor_plan.pdf",
+      "https://www.godrejproperties.com/digitalcollaterals/bangalore/united/pdf/Godrej_United_Flipchart.pdf",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-united/landingpage",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-united/contactus/www.godrej.com",
+      "https://www.godrejproperties.com/index.php/bangalore/residential/godrej-united/overview"
     ],
     "searchAttempts": [
       {
@@ -5504,15 +6430,27 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-united/1dc53a6b7c93b639.webp",
+        "originUrl": "https://www.godrejproperties.com/digitalcollateral/bangalore/united/pdf/United_Floor_plan.pdf",
+        "sourcePage": 1,
+        "sourceImage": null,
+        "fileSha256": "1dc53a6b7c93b6390c081b4f0946a7ac934565a5e2150b2f345cebb07d4afd6c",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-air": {
     "name": "Godrej Air",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/bangalore-residential-property/godrej-air/9263/project/floor-plans"
+      "https://www.godrejproperties.com/about/bangalore/residential/godrej-air/",
+      "https://www.godrejproperties.com/backoffice/data_content/projects/godrej_air_nxt_bangalore/ebrochure/GODREJ_AIR_BANGALORE_Foor_Plan5.pdf",
+      "https://www.godrejproperties.com/pdf/GODREJ_AIR_BANGALORE_Floor_plan.pdf"
     ],
     "searchAttempts": [
       {
@@ -5526,8 +6464,45 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-air/0b26726fd0085429.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/GODREJ_AIR_BANGALORE_Floor_plan.pdf",
+        "sourcePage": 1,
+        "sourceImage": null,
+        "fileSha256": "0b26726fd0085429e017fd4d41ed9baacf56102a444f5ea2f1928ac840c365d5",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-air/b671418361540835.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/GODREJ_AIR_BANGALORE_Floor_plan.pdf",
+        "sourcePage": 2,
+        "sourceImage": null,
+        "fileSha256": "b67141836154083504bc7c9d954acb287870480fd597290ca31e5242b9c22c0a",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-air/56d232fb5358eb32.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/GODREJ_AIR_BANGALORE_Floor_plan.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "56d232fb5358eb32cf3a59aa3b4782982c225302a8810c5b41ab095d38527326",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      },
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-air/9a9f2eebb259289b.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/GODREJ_AIR_BANGALORE_Floor_plan.pdf",
+        "sourcePage": 4,
+        "sourceImage": null,
+        "fileSha256": "9a9f2eebb259289b5249cc3b1603906670d6d04b799dd58f11f7624554eee507",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-aqua": {
     "name": "Godrej Aqua",
@@ -5692,10 +6667,16 @@
   },
   "godrej-properties-godrej-royale-woods": {
     "name": "Godrej Royale Woods",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.godrejproperties.com/bangalore/residential/godrej-royale-woods/about/floor-plan"
+      "https://www.godrejproperties.com/about/bangalore/residential/godrej-royale-woods/",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-royale-woods/about/floor-plan",
+      "https://www.godrejproperties.com/pdf/FloorPlans.pdf",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-royale-woods/about",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-royale-woods/download/delhi/residential/godrej-connaught-one/landingpage",
+      "https://www.godrejproperties.com/bangalore/residential/godrej-royale-woods/landingpage",
+      "https://www.godrejproperties.com/bengaluru/residential/godrej-royale-woods/gallery"
     ],
     "searchAttempts": [
       {
@@ -5719,8 +6700,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-royale-woods/e27d42ba8abcfebe.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/FloorPlans.pdf",
+        "sourcePage": 3,
+        "sourceImage": null,
+        "fileSha256": "e27d42ba8abcfebe8c1ae05a559523af4959a8ce881feeab47eba503a42a19e0",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "godrej-properties-godrej-splendour": {
     "name": "Godrej Splendour",
@@ -5797,10 +6788,16 @@
   },
   "godrej-properties-godrej-woodland": {
     "name": "Godrej Woodland",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.godrejproperties.com/bengaluru/plotted/godrej-woodland"
+      "https://www.godrejproperties.com/about/bangalore/plotted/godrej-woodland/",
+      "https://www.godrejproperties.com/pdf/Godrej_Woodland_flipchart.pdf",
+      "https://www.godrejproperties.com/pdf/Godrej_Woodland_Brochure.pdf",
+      "https://www.godrejproperties.com/bengaluru/plotted/godrej-woodland",
+      "https://www.godrejproperties.com/pdf/Woodland_Opp_Doc.pdf",
+      "https://www.godrejproperties.com/pdf/Woodland_Opp_Doc_Final.pdf",
+      "https://www.godrejproperties.com/pdf/Woodland_Opp_Doc_Final1.pdf"
     ],
     "searchAttempts": [
       {
@@ -5819,15 +6816,25 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/godrej-properties-godrej-woodland/96ebae001818c7b7.webp",
+        "originUrl": "https://www.godrejproperties.com/pdf/Godrej_Woodland_flipchart.pdf",
+        "sourcePage": 16,
+        "sourceImage": null,
+        "fileSha256": "96ebae001818c7b7a09de36dd596c079ae667a5faea5931f4a99153682ddc431",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "casatrance-skanda-aura": {
     "name": "Skanda Aura",
-    "checkedOn": "2026-11-14",
-    "status": "request",
+    "checkedOn": "2026-11-15",
+    "status": "available",
     "researchPages": [
-      "https://www.squareyards.com/skanda-aura-devanahalli-bangalore-npd-345967"
+      "https://www.casatrance.com/projects/skanda-aura"
     ],
     "searchAttempts": [
       {
@@ -5836,8 +6843,18 @@
         "errors": []
       }
     ],
-    "assets": [],
-    "unavailableReason": "No clear, project-matched plan without other listing-site branding was verified in researched public sources."
+    "assets": [
+      {
+        "asset": "/images/floorplans/casatrance-skanda-aura/8b903fad8bada965.webp",
+        "originUrl": "https://www.casatrance.com/uploads/projects/skanda-aura-brochure-1-page-0009-1780144380421.webp",
+        "sourcePage": null,
+        "sourceImage": null,
+        "fileSha256": "8b903fad8bada96595e288c6a0ac2fa0b89d7091801b9a9fe1abbcb046c40db4",
+        "extraction": "Complete published plan image or rendered PDF page",
+        "applicability": null
+      }
+    ],
+    "unavailableReason": null
   },
   "casatrance-needs-3-project-168": {
     "name": "Needs 3 Project 168",

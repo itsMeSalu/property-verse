@@ -1,8 +1,10 @@
+> Current coverage: **151 properties / 436 layouts**. See [the floor-plan follow-up](floor-plan-follow-up.md). The initial audit below records the earlier implementation.
+
 # Smart Yield branding and floor-plan update — 14 November 2026
 
 ## Delivered
 
-- Removed imported Prop Times testimonials and their associated review data.
+- Removed imported the previous brand testimonials and their associated review data.
 - Removed public listing-site, price-source, registration-source and location-source links. Research provenance remains internal in `docs/floor-plan-sources.json`.
 - Replaced homepage developer logo tiles with factual project-builder names. Actual property and developer identities remain accurate; Smart Yield is presented as the property advisor.
 - Corrected the homepage journal label/date fragment and added a genuine not-found page.

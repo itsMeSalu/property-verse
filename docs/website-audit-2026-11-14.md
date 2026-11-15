@@ -10,7 +10,7 @@ The site loads successfully, but it does not yet meet the requirement to show on
 
 - Production build and property-data validation passed for all 188 projects.
 - Browser smoke test loaded 215 routes: eight main pages, 12 article pages, seven role pages and 188 property pages. No JavaScript page errors were recorded.
-- No outbound PropTimes links were found in the rendered pages. Blog, job and privacy pages remain local.
+- No outbound the previous brand links were found in the rendered pages. Blog, job and privacy pages remain local.
 - FAQ expansion, enquiry modal opening and blog search worked. The property keyword route loaded filtered listings.
 - Seven representative pages had no horizontal overflow at 390px width.
 - No completed image requests with zero intrinsic width were detected. This is not proof that every deferred image or third-party map loads.
@@ -18,7 +18,7 @@ The site loads successfully, but it does not yet meet the requirement to show on
 
 ## Issues to resolve
 
-1. **Homepage testimonials still mention Prop Times.** The section introduction, review attributions and several review texts refer to that business. These should be removed or replaced with genuine Smart Yield testimonials, rather than relabelled as Smart Yield reviews.
+1. **Homepage testimonials still mention the previous brand.** The section introduction, review attributions and several review texts refer to that business. These should be removed or replaced with genuine Smart Yield testimonials, rather than relabelled as Smart Yield reviews.
 2. **Property details link to other websites.** Registration sources, price sources and map sources include builders, Housing.com, Magicbricks, Square Yards and other research sites. These conflict with the requested presentation. Source records can be retained internally while removing their promotional/public links. Government RERA verification and Google Maps also remain external services.
 3. **Enquiries use the HR email.** The default recipient and example configuration are hr@smartyieldpropeties.com. The local preview opens an email app; it does not directly send or store enquiries. No direct submission endpoint is configured in the local preview. Production settings were not inspected.
 4. **No complete general enquiry email has been supplied.** smartyieldproperties.com is displayed as requested, as a website address. It is not an email recipient. The HR domain spelling is retained exactly as supplied.
